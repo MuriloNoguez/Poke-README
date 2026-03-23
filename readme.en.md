@@ -1,10 +1,10 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" width="80" />
-  <h1>Poké-README</h1>
+  <h1>Poke-README</h1>
   <p><strong>Dynamically display your Pokémon team on your GitHub profile based on your real contributions!</strong></p>
   
   <p>
-    <a href="https://pokereadme.murilonoguez.com.br/"><strong>🚀 Poké-README Builder 🚀</strong></a>
+    <a href="https://pokereadme.murilonoguez.com.br/"><strong>🚀 Poke-README Builder 🚀</strong></a>
   </p>
 
   <p>
