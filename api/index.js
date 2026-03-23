@@ -18,8 +18,13 @@ module.exports = async (req, res) => {
     // 2. Iterate Pokemon slots
     const team = pokeIds.map((id, index) => {
       // 2a. Check if it evolves at this commit count
-      const evolvedPoke = getEvolution(id, commits);
+      let evolvedPoke = getEvolution(id, commits);
       if (!evolvedPoke) return null;
+
+      // 2b. Legendary requirement check (1000 commits)
+      if (evolvedPoke.isLegendary && commits < 1000) {
+        evolvedPoke = getEvolution("132", commits); // Transform into Ditto
+      }
       
       // 2b. Check if this Pokemon slot is Shiny for this specific immutable User ID
       const shinyStatus = isShiny(userId, id, index + 1, commits);
