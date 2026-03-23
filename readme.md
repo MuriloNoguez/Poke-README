@@ -35,7 +35,7 @@
 Depois que você realizar o `deploy` desta automação numa ferramenta Serverless (como a Vercel), insira este snippet de Markdown em qualquer README que quiser!
 
 ```markdown
-![My Pokemon Team](https://SEU_DOMINIO_AQUI/api?user=NOME_DE_USUARIO&pokes=1,4,7,25,133,150)
+![My Pokemon Team](https://pokereadme.murilonoguez.com.br/api?user=MuriloNoguez&pokes=1,4,7,25,133,150)
 ```
 
 **Parâmetros da Query:**
