@@ -14,8 +14,9 @@
 
 ## 🌟 Live Demo
 
-*(Coloque abaixo a URL do seu deploy oficial assim que subir na Vercel! Por enquanto mostramos a render local de testes.)*  
-![My Pokémon Team](./test.svg)
+Aqui está o widget funcionando em tempo real puxando os dados da API:
+
+![My Pokémon Team](https://pokereadme.murilonoguez.com.br/api?user=MuriloNoguez&pokes=1,4,7,25,133,150)
 
 <div align="center">
   <sub>Animações CSS independentes, cruzamento dinâmico de paths e evolução baseada nos seus Commits do GitHub!</sub>
@@ -42,25 +43,11 @@ Depois que você realizar o `deploy` desta automação numa ferramenta Serverles
 - `user`: O nome de exibição (username) do GitHub no qual contabilizaremos o repositório/commits.
 - `pokes`: Lista contendo os números correspondentes da `pokedex` dos Pokémon separados por vírgula (Mínimo de 1, Máximo 6).
 
-## ⚙️ Deploy Fácil & Configuração
-
-1. Fork ou clone este repositório.
-2. Certifique-se de configurar a variável de ambiente (Environment Variable) `GITHUB_TOKEN` com um dos seus Tokens de Acesso Pessoal lá na Vercel (assim permitimos que a API do GitHub GraphQL seja lida sem rate-limit estourar rápido).
-3. Faça o suba (deploy) das funções pra Vercel (a própria plataforma vai ler automaticamente a branch principal assim que a pasta `/api` e o `package.json` forem encontrados).
-4. Divirta-se configurando o seu `pokedex.json` e as sprites base dentro da pasta `/media/`!
-
-## 🧩 Adicionando Mais Sprites
-
-Como o widget lê diretamente seus mapas criados, para registrar um Pokémon novo você deve:
-1. Cadastrar suas regras e evoluções dentro de `/lib/pokedex.json`.
-2. Adicionar os sprites com as nomenclaturas exatas (`default_front.gif`, `default_run.gif`, `shiny_front.gif`, `shiny_run.gif`) seguindo a estrutura de pastas por Geração (Ex: `media/gen1/bulbasaur/`).
-
 ---
 
 <div align="center">
-  <p>Feito com ❤️ por <b>Murilo Noguêz</b></p>
+  <p>Feito por <b><a href="https://github.com/MuriloNoguez">Murilo Noguêz</a></b></p>
   <p>Para os saudosistas da era clássica do Game Boy!</p>
   <br/>
   <p><i><b>Aviso Legal:</b> Pokémon e todos os nomes e sprites associados são marcas registradas e pertencem à Nintendo, Creatures Inc. e GAME FREAK inc. Este é um projeto não-oficial feito de fã para fãs, sem fins lucrativos. A licença de código aberto se aplica apenas à base de código (programação), e não aos ativos da marca.</i></p>
 </div>
-
