@@ -36,7 +36,7 @@ Aqui está o widget funcionando em tempo real puxando os dados da API:
 Depois que você realizar o `deploy` desta automação numa ferramenta Serverless (como a Vercel), insira este snippet de Markdown em qualquer README que quiser!
 
 ```markdown
-![My Pokemon Team](https://pokereadme.murilonoguez.com.br/api?user=MuriloNoguez&pokes=1,4,7,25,133,150)
+![My Pokemon Team](https://pokereadme.murilonoguez.com.br/api?user=YourUsername&pokes=1,4,7,25,133,150)
 ```
 
 **Parâmetros da Query:**
