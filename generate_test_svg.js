@@ -15,6 +15,7 @@ const mockTeam = [
         name: 'mewtwo',
         gen: 'gen1',
         isShiny: false,
+        scale: 1.3,
         base64: {
             front: getBase64Sprite('gen1', 'mewtwo', 'default_front'),
             run: getBase64Sprite('gen1', 'mewtwo', 'default_run')
@@ -24,6 +25,7 @@ const mockTeam = [
         name: 'charizard',
         gen: 'gen1',
         isShiny: true,
+        scale: 1.2,
         base64: {
             front: getBase64Sprite('gen1', 'charizard', 'shiny_front'),
             run: getBase64Sprite('gen1', 'charizard', 'shiny_run')
@@ -33,6 +35,7 @@ const mockTeam = [
         name: 'lugia',
         gen: 'gen2',
         isShiny: false,
+        scale: 1.6,
         base64: {
             front: getBase64Sprite('gen2', 'lugia', 'default_front'),
             run: getBase64Sprite('gen2', 'lugia', 'default_run')
@@ -42,6 +45,7 @@ const mockTeam = [
         name: 'umbreon',
         gen: 'gen2',
         isShiny: true,
+        scale: 0.8,
         base64: {
             front: getBase64Sprite('gen2', 'umbreon', 'shiny_front'),
             run: getBase64Sprite('gen2', 'umbreon', 'shiny_run')
@@ -51,6 +55,7 @@ const mockTeam = [
         name: 'rayquaza',
         gen: 'gen3',
         isShiny: true,
+        scale: 1.6,
         base64: {
             front: getBase64Sprite('gen3', 'rayquaza', 'shiny_front'),
             run: getBase64Sprite('gen3', 'rayquaza', 'shiny_run')
@@ -60,6 +65,7 @@ const mockTeam = [
         name: 'celebi',
         gen: 'gen2',
         isShiny: false,
+        scale: 0.7,
         base64: {
             front: getBase64Sprite('gen2', 'celebi', 'default_front'),
             run: getBase64Sprite('gen2', 'celebi', 'default_run')
