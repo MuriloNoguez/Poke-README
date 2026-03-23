@@ -6,7 +6,7 @@
   <p>
     <img src="https://img.shields.io/badge/Powered_by-Vercel-black?logo=vercel&logoColor=white" alt="Vercel" />
     <img src="https://img.shields.io/badge/Node.js-18.x-339933?logo=node.js&logoColor=white" alt="Node.js" />
-    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" />
+    <img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License" />
   </p>
 </div>
 
@@ -58,6 +58,9 @@ Como o widget lê diretamente seus mapas criados, para registrar um Pokémon nov
 ---
 
 <div align="center">
-  <p>Feito com ❤️ para saudosistas da era clássica do Game Boy</p>
+  <p>Feito com ❤️ por <b>Murilo Noguêz</b></p>
+  <p>Para os saudosistas da era clássica do Game Boy!</p>
+  <br/>
+  <p><i><b>Aviso Legal:</b> Pokémon e todos os nomes e sprites associados são marcas registradas e pertencem à Nintendo, Creatures Inc. e GAME FREAK inc. Este é um projeto não-oficial feito de fã para fãs, sem fins lucrativos. A licença de código aberto se aplica apenas à base de código (programação), e não aos ativos da marca.</i></p>
 </div>
 
