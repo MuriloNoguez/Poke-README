@@ -1,8 +1,18 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" width="80" />
   <h1>Poké-README</h1>
-  <p><strong>Dynamically display your Pokémon team on your GitHub profile based on your real contributions!</strong></p>
+  <p><strong>Exiba dinamicamente seu time Pokémon no seu perfil do GitHub baseado em suas contribuições reais!</strong></p>
   
+  <p>
+    <a href="https://pokereadme.murilonoguez.com.br/"><strong>🚀 Poké-README Builder 🚀</strong></a>
+  </p>
+
+  <p>
+    <strong>Português</strong> • 
+    <a href="readme.en.md">English</a> • 
+    <a href="readme.es.md">Español</a>
+  </p>
+
   <p>
     <img src="https://img.shields.io/badge/Powered_by-Vercel-black?logo=vercel&logoColor=white" alt="Vercel" />
     <img src="https://img.shields.io/badge/Node.js-18.x-339933?logo=node.js&logoColor=white" alt="Node.js" />
@@ -12,86 +22,118 @@
 
 ---
 
-## 🌟 Live Preview
+## 🌟 Demonstração ao Vivo
 
-See it in action! This widget automatically evolves your Pokémon as you commit code:
-
-![My Pokémon Team](https://pokereadme.murilonoguez.com.br/api?user=MuriloNoguez&pokes=6,9,160,149,133,150)
+Veja em ação! Este widget evolui seus Pokémon automaticamente conforme você faz commits:
 
 <div align="center">
-  <sub><i>Wait... are those base forms? Yes! The system intelligently adjusts your team based on your commit history.</i></sub>
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=MuriloNoguez&pokes=6,9,160,149,133,150" />
+  <br/>
+  <sub><i>Espere... esses são as formas base? Sim! O sistema ajusta inteligentemente seu time baseado no seu histórico de commits.</i></sub>
 </div>
 
 ---
 
-## 🚀 Pro Features
+## 🚀 Funcionalidades Pro
 
-### 📈 Progressive Evolution
-Requested a **Charizard** (ID 6) but only have a few commits? The API will automatically show a **Charmander** until you reach the required threshold! 
-- **Dynamic Downscaling:** If your profile doesn't meet the "experience" (commits) for a specific stage, the Pokémon will appear in its appropriate evolutionary form.
-- **Experience Matters:** Every commit counts towards your team's growth.
+### 📈 Evolução Progressiva
+Pediu um **Charizard** (ID 6) mas só tem alguns commits? A API mostrará automaticamente um **Charmander** até você atingir o limite necessário! 
+- **Downscaling Dinâmico:** Se seu perfil não tiver a "experiência" (commits) para um estágio específico, o Pokémon aparecerá em forma básica.
+- **Experiência Importa:** Cada commit conta para o crescimento do seu time.
 
-### ✨ The 1/8192 Shiny Hunt
-We take "Classic Chance" seriously. Every time the API renders your team, it checks for a Shiny status.
-- **Permanent Rarity:** Your Shiny status is tied to your unique GitHub User ID and the specific slot. 
-- **Increasing Odds:** For every **10 commits** you make, you get an extra "roll" for that Pokémon. Keep coding to find that elusive blue Ditto or gold Magikarp!
+### ✨ A Caçada Shiny (1/8192)
+Sistema de raridade clássico. Cada vez que a API renderiza seu time, ela verifica o status Shiny.
+- **Raridade Permanente:** Seu status Shiny é atrelado ao seu ID de usuário do GitHub. Uma vez encontrado, é seu para sempre!
+- **Aumentando as Chances:** A cada 10 commits, você ganha uma nova "tentativa" (roll) para aquele Pokémon específico.
 
-### 🔱 Legendary Requirements
-Legendaries aren't handed out for free. You need to prove your status as a "Master Developer".
-- **The 1000 Commit Wall:** If you have less than 1,000 total contributions, any Legendary ID in your URL will **Transform into a Ditto** as a placeholder.
-- **Real Data Example:** `?pokes=150,249,384` will show 3 Dittos for most users until they hit 1k commits.
-
-### 💎 Eevee Elements
-Eevee's evolution is the only one you can control via items.
-- **Syntax:** Add `&item=water` for Vaporeon, `&item=thunder` for Jolteon, and so on.
+### 🔱 Requisitos Lendários
+Pokémon Lendários (como Mewtwo or Rayquaza) exigem dedicação real. 
+- **A Barreira de 1.000 Commits:** Você deve ter pelo menos **1.000 commits** em seu histórico para revelar um Lendário.
+- **Status de Transformação:** Se você tiver menos de 1.000 commits, esses IDs aparecerão como um **Ditto**!
 
 ---
 
-## 🛠️ Installation
+## 🛠️ Instalação
 
-Add this to your GitHub profile README (around line 1):
+Adicione isto ao README do seu perfil do GitHub:
 
-```markdown
-![My Pokemon Team](https://pokereadme.murilonoguez.com.br/api?user=YOUR_USERNAME&pokes=6,9,3,149,143,26)
+```html
+<div align="center">
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=YourUsername&pokes=6,9,3,149,143,26" />
+</div>
 ```
 
-### 📋 URL Parameters
+---
 
-| Parameter | Meaning | Values |
-| :--- | :--- | :--- |
-| `user` | GitHub Handle | `torvalds`, `gaearon`, etc. |
-| `pokes` | Team IDs | 1 to 493 (Separated by commas) |
-| `item` | Eevee Stone | `water`, `thunder`, `fire`, `sun`, `moon`, `leaf`, `ice` |
+## 🖼️ Galeria & Exemplos
+
+### 🔱 O Conselho Lendário
+Requer **1.000+ total commits** para exibir o time lendário completo. Se você não atingiu a meta, eles aparecerão como Dittos.
+```html
+<div align="center">
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=YourUsername&pokes=150,249,384,151,251,493" />
+</div>
+```
+<div align="center"><img src="media/svgs/legendary.svg" alt="Mockup Lendário" /></div>
+
+### 💎 Evoluções do Eevee
+Exiba as diferentes formas do Eevee usando o parâmetro `&item=`!
+```html
+<div align="center">
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=YourUsername&pokes=133,133,133,133,133,133&item=fire" />
+</div>
+```
+<div align="center"><img src="media/svgs/eevee.svg" alt="Mockup Eevee" /></div>
+
+### 🌈 Caçadores de Shiny
+O flex supremo. Estas cores raras têm chance base de 1/8192, aumentando a cada 10 commits que você faz!
+```html
+<div align="center">
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=YourUsername&pokes=6,130,376,384,197,132" />
+</div>
+```
+<div align="center"><img src="media/svgs/shiny.svg" alt="Mockup Shiny" /></div>
+
+### 🟢 Time Kanto Padrão
+Um time clássico com os iniciais originais, Pikachu, Eevee e o misterioso Ditto.
+```html
+<div align="center">
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=YourUsername&pokes=1,4,7,25,133,132" />
+</div>
+```
+<div align="center"><img src="media/svgs/normal.svg" alt="Mockup Normal" /></div>
 
 ---
 
-## 🖼️ Gallery of Real Scenarios
+## ⚙️ Configuração & Deploy Detalhado
 
-#### 🔴 Mockup: Master Team (Legendaries & Shinies)
-*What your profile could look like with 1000+ commits and a bit of luck!*
-![Mockup](test.svg)
+Siga estes passos para ter seu próprio widget rodando (opcional para maior estabilidade):
 
-### 🟢 Starter Pack (0-150 Commits)
-`?user=newbie&pokes=1,4,7`
-![Starter](https://pokereadme.murilonoguez.com.br/api?user=seed-demo-1&pokes=1,4,7)
+### 1. Faça um Fork
+Clique no botão **Fork** no topo deste repositório para criar uma cópia na sua conta.
 
-### 🔵 The Eeveelution Collector
-`?user=MuriloNoguez&pokes=133,133,133&item=ice`
-![Eevee](https://pokereadme.murilonoguez.com.br/api?user=MuriloNoguez&pokes=133,133,133&item=ice)
+### 2. Gere um Token do GitHub
+Como a API faz muitas requisições para contar seus commits, você precisará de um Personal Access Token para evitar bloqueios:
+- Vá em **Settings > Developer settings > Personal access tokens > Tokens (classic)**.
+- Gere um novo token com a permissão `read:user`.
+- **Copie o token gerado**.
 
-### 🟣 The "Not Yet Ready" Legendaries (Standard users)
-`?user=MuriloNoguez&pokes=150,249,384`
-![Ditto Theory](https://pokereadme.murilonoguez.com.br/api?user=MuriloNoguez&pokes=150,249,384)
+### 3. Deploy na Vercel
+- Crie uma conta na [Vercel](https://vercel.com/) e conecte com seu GitHub.
+- Importe o repositório que você acabou de dar Fork.
+- Antes de clicar em "Deploy", vá em **Environment Variables** e adicione:
+  - **Key:** `GITHUB_TOKEN`
+  - **Value:** `(cole o token que você gerou)`
+- Agora clique em **Deploy**.
+
+### 4. Aplique no seu Perfil
+Após o deploy, a Vercel te dará uma URL (ex: `meu-poke-readme.vercel.app`). Use essa URL nos exemplos acima substituindo `https://pokereadme.murilonoguez.com.br`.
 
 ---
-
-## ⚙️ Setup & Deployment
-
-1. **Deploy to Vercel:** Use the Vercel CLI or Connect your Repo.
-2. **Environment Variable:** Add `GITHUB_TOKEN` in Vercel Settings to enable GraphQL and bypass rate limits.
-3. **Enjoy!**
 
 <div align="center">
-  <p>Created with ❤️ by <b><a href="https://github.com/MuriloNoguez">Murilo Noguêz</a></b></p>
-  <p><i>Pokémon is © Nintendo/Creatures Inc./GAME FREAK inc.</i></p>
+  <p>Feito por <b><a href="https://github.com/MuriloNoguez">Murilo Noguêz</a></b></p>
+  <p>Para os saudosistas da era clássica do Game Boy!</p>
+  <br/>
+  <p><i><b>Aviso Legal:</b> Pokémon e todos os nomes e sprites associados são marcas registradas e pertencem à Nintendo, Creatures Inc. e GAME FREAK inc. Este é um projeto não-oficial feito de fã para fãs, sem fins lucrativos. A licença de código aberto se aplica apenas à base de código (programação), e não aos ativos da marca.</i></p>
 </div>
