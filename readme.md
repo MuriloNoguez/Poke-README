@@ -4,7 +4,7 @@
   <p><strong>Exiba dinamicamente seu time Pokémon no seu perfil do GitHub baseado em suas contribuições reais!</strong></p>
   
   <p>
-    <a href="https://pokereadme.murilonoguez.com.br/"><strong>🚀 Poké-README Builder 🚀</strong></a>
+    <a href="https://pokereadme.murilonoguez.com.br/"><strong>🚀 Poke-README Builder 🚀</strong></a>
   </p>
 
   <p>
