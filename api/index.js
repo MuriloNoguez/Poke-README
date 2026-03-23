@@ -4,7 +4,7 @@ const { generateSVG } = require('../lib/svgTemplate');
 
 module.exports = async (req, res) => {
   try {
-    const { user, pokes } = req.query;
+    const { user, pokes, item } = req.query;
 
     if (!user || !pokes) {
       return res.status(400).json({ error: "Missing 'user' or 'pokes' query param. Example: ?user=timao&pokes=1,4,7" });
@@ -18,12 +18,12 @@ module.exports = async (req, res) => {
     // 2. Iterate Pokemon slots
     const team = pokeIds.map((id, index) => {
       // 2a. Check if it evolves at this commit count
-      let evolvedPoke = getEvolution(id, commits);
+      let evolvedPoke = getEvolution(id, commits, item);
       if (!evolvedPoke) return null;
 
       // 2b. Legendary requirement check (1000 commits)
       if (evolvedPoke.isLegendary && commits < 1000) {
-        evolvedPoke = getEvolution("132", commits); // Transform into Ditto
+        evolvedPoke = getEvolution("132", commits, item); // Transform into Ditto
       }
       
       // 2b. Check if this Pokemon slot is Shiny for this specific immutable User ID
