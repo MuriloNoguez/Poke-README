@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poké-README Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar card">
+            <div class="sidebar-header">
+                <h2>Configurações</h2>
+                <button id="clear-btn" class="btn-icon" title="Limpar Time">🗑️</button>
+            </div>
+
+            <div class="config-section">
+                <label>Usuário GitHub</label>
+                <input type="text" id="username" placeholder="Seu Username..." autocomplete="off">
+            </div>
+
+            <div class="config-section">
+                <label>Buscar Pokémon</label>
+                <input type="text" id="search" placeholder="Nome ou Nº...">
+            </div>
+
+            <div class="pokemon-list-container">
+                <div class="pokemon-list" id="grid">
+                    <!-- Cards will be injected here -->
+                </div>
+            </div>
+
+            <div class="selection-counter">
+                <span>Selecionados: <strong id="count">0</strong>/6</span>
+            </div>
+        </aside>
+
+        <!-- Main Content (Preview Area) -->
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Poké-README <span>Live Preview</span></h1>
+                <p>Veja como o seu time ficará no seu perfil!</p>
+            </header>
+
+            <div class="preview-card card">
+                <div class="preview-container" id="preview-wrapper">
+                    <div class="preview-placeholder">Escolha um Pokémon e digite o usuário para ver o preview...</div>
+                    <img id="preview-img" src="" alt="Preview" style="display: none;">
+                </div>
+            </div>
+
+            <section class="code-section">
+                <div class="code-header">
+                    <h3>Código Markdown</h3>
+                    <button id="copy-btn" class="btn-primary">Copiar Código</button>
+                </div>
+                <div class="code-box">
+                    <pre><code id="output-code">Selecione os Pokémon para gerar o código...</code></pre>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
