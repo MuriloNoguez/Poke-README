@@ -18,26 +18,26 @@ const clearBtn = document.getElementById('clear-btn');
 // 1. Initial Load - Try Local first, then Fallback to GitHub
 async function init() {
     try {
-        console.log("Iniciando carregamento da Pokédex...");
+        console.log("Starting Pokédex load...");
         
-        // Tentamos o caminho local primeiro (importante para desenvolvimento)
+        // Try local path first (important for development)
         let response = await fetch("./lib/pokedex.json");
         
         if (!response.ok) {
-            console.warn("Caminho local falou, tentando GitHub...");
+            console.warn("Local path failed, trying GitHub...");
             response = await fetch(`${GITHUB_RAW_BASE}/lib/pokedex.json`);
         }
         
-        if (!response.ok) throw new Error("Falha no fetch em ambos os caminhos");
+        if (!response.ok) throw new Error("Fetch failed on both paths");
         
         pokedex = await response.json();
         const count = Object.keys(pokedex).length;
-        console.log(`Pokédex carregada com sucesso: ${count} Pokémon registrados.`);
+        console.log(`Pokédex loaded successfully: ${count} Pokémon registered.`);
         
         renderGrid(Object.entries(pokedex));
     } catch (err) {
-        console.error("Erro crítico ao carregar Pokédex:", err);
-        grid.innerHTML = '<div class="error">Erro ao carregar dados. Verifique os arquivos locais (lib/pokedex.json).</div>';
+        console.error("Critical error loading Pokédex:", err);
+        grid.innerHTML = '<div class="error">Error loading data. Check local files (lib/pokedex.json).</div>';
     }
 }
 
@@ -49,7 +49,7 @@ function renderGrid(entries) {
         card.className = `pokemon-sm-card ${selectedTeam.includes(id) ? 'selected' : ''}`;
         card.setAttribute('data-id', id);
         
-        // Sprite path: Prioriza local, mas mantém fallback para GitHub se local não existir
+        // Sprite path: Priority to local, but falls back to GitHub if local doesn't exist
         const spritePath = `./media/${data.gen}/${data.name}/default_front.gif`;
         const githubSprite = `${GITHUB_RAW_BASE}/media/${data.gen}/${data.name}/default_front.gif`;
         const fallbackIcon = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png';
@@ -71,7 +71,7 @@ function togglePoke(id) {
         selectedTeam.splice(index, 1);
     } else {
         if (selectedTeam.length >= 6) {
-            alert("Limite de 6 Pokémon!");
+            alert("Limit of 6 Pokémon!");
             return;
         }
         selectedTeam.push(id);
@@ -89,7 +89,7 @@ function updateUI() {
         card.classList.toggle('selected', selectedTeam.includes(id));
     });
 
-    const user = usernameInput.value.trim() || "SEU_USUARIO";
+    const user = usernameInput.value.trim() || "YOUR_USERNAME";
     const pokes = selectedTeam.join(',');
     
     if (selectedTeam.length > 0) {
@@ -103,7 +103,7 @@ function updateUI() {
         if (placeholder) placeholder.style.display = 'none';
 
         // Update Markdown Code
-        const code = `<div align="center">\n  <img src="${apiUrl}" alt="Meu Time Pokémon" />\n</div>`;
+        const code = `<div align="center">\n  <img src="${apiUrl}" alt="My Pokémon Team" />\n</div>`;
         outputCode.innerText = code;
         copyBtn.disabled = false;
     } else {
@@ -111,7 +111,7 @@ function updateUI() {
         const placeholder = previewWrapper.querySelector('.preview-placeholder');
         if (placeholder) placeholder.style.display = 'block';
         
-        outputCode.innerText = "Selecione os Pokémon na barra lateral...";
+        outputCode.innerText = "Select Pokémon in the sidebar...";
         copyBtn.disabled = true;
     }
 }
@@ -129,10 +129,10 @@ usernameInput.oninput = () => updateUI();
 
 copyBtn.onclick = () => {
     const text = outputCode.innerText;
-    if (text.includes("Selecione")) return;
+    if (text.includes("Select")) return;
     navigator.clipboard.writeText(text);
     const original = copyBtn.innerText;
-    copyBtn.innerText = "Copiado! ✨";
+    copyBtn.innerText = "Copied! ✨";
     setTimeout(() => copyBtn.innerText = original, 2000);
 };
 
