@@ -1,0 +1,15 @@
+{
+  "1": { "name": "bulbasaur", "gen": "gen1", "evolution": "2", "commitsRequired": 100 },
+  "2": { "name": "ivysaur", "gen": "gen1", "evolution": "3", "commitsRequired": 300 },
+  "3": { "name": "venusaur", "gen": "gen1", "evolution": null, "commitsRequired": 0 },
+  "4": { "name": "charmander", "gen": "gen1", "evolution": "5", "commitsRequired": 100 },
+  "5": { "name": "charmeleon", "gen": "gen1", "evolution": "6", "commitsRequired": 300 },
+  "6": { "name": "charizard", "gen": "gen1", "evolution": null, "commitsRequired": 0 },
+  "7": { "name": "squirtle", "gen": "gen1", "evolution": "8", "commitsRequired": 100 },
+  "8": { "name": "wartortle", "gen": "gen1", "evolution": "9", "commitsRequired": 300 },
+  "9": { "name": "blastoise", "gen": "gen1", "evolution": null, "commitsRequired": 0 },
+  "25": { "name": "pikachu", "gen": "gen1", "evolution": "26", "commitsRequired": 150 },
+  "26": { "name": "raichu", "gen": "gen1", "evolution": null, "commitsRequired": 0 },
+  "133": { "name": "eevee", "gen": "gen1", "evolution": null, "commitsRequired": 0 },
+  "150": { "name": "mewtwo", "gen": "gen1", "evolution": null, "commitsRequired": 0 }
+}
