@@ -40,8 +40,30 @@ Depois que você realizar o `deploy` desta automação numa ferramenta Serverles
 ```
 
 **Parâmetros da Query:**
-- `user`: O nome de exibição (username) do GitHub no qual contabilizaremos o repositório/commits.
-- `pokes`: Lista contendo os números correspondentes da `pokedex` dos Pokémon separados por vírgula (Mínimo de 1, Máximo 6).
+- `user`: O seu username oficial do GitHub.
+- `pokes`: IDs Pokédex (1-493) separados por vírgula (Mínimo 1, Máximo 6).
+- `item`: (Opcional) Usado para o **Eevee (133)**. Valores: `water`, `thunder`, `fire`, `sun`, `moon`, `leaf`, `ice`.
+
+---
+
+## ⚙️ Configuração Técnica & Deploy
+
+Para que as evoluções e os dados de commit funcionem com rapidez e precisão (evitando o rate-limit da API pública), você deve configurar um **Personal Access Token** do GitHub.
+
+### 1. Criando seu Token
+1. Vá em [GitHub Settings > Tokens (classic)](https://github.com/settings/tokens).
+2. Gere um novo token com a permissão mínima de leitura (apenas `read:user`).
+3. Copie o token gerado.
+
+### 2. Configurando na Vercel
+1. No painel do seu projeto na Vercel, vá em **Settings > Environment Variables**.
+2. Adicione uma nova variável:
+   - **Key:** `GITHUB_TOKEN`
+   - **Value:** `(cole o seu token)`
+3. Clique em **Save** e realize um novo deploy para aplicar as mudanças!
+
+> [!TIP]
+> Com o `GITHUB_TOKEN` configurado, o sistema passa a usar a API **GraphQL** do GitHub, conseguindo contabilizar todos os seus commits de contribuição histórica com muito mais fidelidade!
 
 ---
 
