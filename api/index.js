@@ -22,7 +22,7 @@ module.exports = async (req, res) => {
       if (!evolvedPoke) return null;
       
       // 2b. Check if this Pokemon slot is Shiny for this specific immutable User ID
-      const shinyStatus = isShiny(userId, index + 1);
+      const shinyStatus = isShiny(userId, id, index + 1, commits);
       
       // 2c. Get Base64 image bytes (from `default_front.gif` or `shiny_front.gif`)
       const base64 = getBase64Sprite(evolvedPoke, shinyStatus);
