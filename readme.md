@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" width="80" />
-  <h1>Poké-GitHub README Stats</h1>
+  <h1>Poke-README</h1>
   <p><strong>Exiba dinamicamente o seu time Pokémon diretamente no seu perfil do GitHub!</strong></p>
   
   <p>
