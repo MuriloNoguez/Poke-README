@@ -6,11 +6,14 @@ const path = require('path');
 
 module.exports = async (req, res) => {
   try {
-    const { user, pokes, item } = req.query;
+    const { user, pokes, item, names } = req.query;
 
     if (!user || !pokes) {
       return res.status(400).json({ error: "Missing 'user' or 'pokes' query param. Example: ?user=timao&pokes=1,4,7" });
     }
+
+    // 0. Calculations for extra features
+    const nicknameList = (names || "").split(',').map(n => n.trim());
 
     // Load Background
     let backgroundBase64 = null;
@@ -27,6 +30,7 @@ module.exports = async (req, res) => {
     
     // 1. Fetch GitHub User ID and Commits
     const { userId, commits } = await getUser(user);
+    const teamLevel = Math.min(100, Math.max(1, Math.floor(commits / 10)));
 
     // 2. Iterate Pokemon slots
     const team = pokeIds.map((id, index) => {
@@ -71,7 +75,9 @@ module.exports = async (req, res) => {
         ...evolvedPoke,
         isShiny: shinyStatus,
         base64,
-        size
+        size,
+        level: teamLevel,
+        nickname: nicknameList[index] || null
       };
     });
 
