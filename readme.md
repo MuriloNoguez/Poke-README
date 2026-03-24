@@ -370,12 +370,7 @@ Once deployed, Vercel will give you a URL (e.g., `my-poke-readme.vercel.app`). U
   </p>
 
   <p align="center">
-    <img src="https://img.shields.io/github/stars/MuriloNoguez/Poke-README?style=flat-square&color=gold" alt="Stars" />
-    <img src="https://img.shields.io/github/forks/MuriloNoguez/Poke-README?style=flat-square&color=blue" alt="Forks" />
-    <img src="https://img.shields.io/github/issues/MuriloNoguez/Poke-README?style=flat-square&color=red" alt="Issues" />
-    <img src="https://img.shields.io/badge/Powered_by-Vercel-black?logo=vercel&logoColor=white" alt="Vercel" />
-    <img src="https://img.shields.io/badge/Node.js-18.x-339933?logo=node.js&logoColor=white" alt="Node.js" />
-    <img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License" />
+    <img src="https://img.shields.io/github/stars/MuriloNoguez/Poke-README?style=flat-square&color=gold" alt="Stars" /><img src="https://img.shields.io/github/forks/MuriloNoguez/Poke-README?style=flat-square&color=blue" alt="Forks" /><img src="https://img.shields.io/github/issues/MuriloNoguez/Poke-README?style=flat-square&color=red" alt="Issues" /><img src="https://img.shields.io/badge/Powered_by-Vercel-black?logo=vercel&logoColor=white" alt="Vercel" /><img src="https://img.shields.io/badge/Node.js-18.x-339933?logo=node.js&logoColor=white" alt="Node.js" /><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License" />
   </p>
 </div>
 
