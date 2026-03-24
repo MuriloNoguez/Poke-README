@@ -21,7 +21,7 @@ const nicknamesContainer = document.getElementById('nicknames-container');
 // 1. Initial Load - Try Local first, then Fallback to GitHub
 async function init() {
     try {
-        console.log("Starting Pokédex load...");
+        console.log("Starting Pokedex load...");
         
         // Try local path first (important for development)
         let response = await fetch("./lib/pokedex.json");
@@ -35,11 +35,11 @@ async function init() {
         
         pokedex = await response.json();
         const count = Object.keys(pokedex).length;
-        console.log(`Pokédex loaded successfully: ${count} Pokémon registered.`);
+        console.log(`Pokedex loaded successfully: ${count} Pokemon registered.`);
         
         renderGrid(Object.entries(pokedex));
     } catch (err) {
-        console.error("Critical error loading Pokédex:", err);
+        console.error("Critical error loading Pokedex:", err);
         grid.innerHTML = '<div class="error">Error loading data. Check local files (lib/pokedex.json).</div>';
     }
 }
@@ -77,7 +77,7 @@ function togglePoke(id) {
         teamNicks.push("");
     } else {
         if (selectedTeam.length >= 6) {
-            alert("Limit of 6 Pokémon!");
+            alert("Limit of 6 Pokemon!");
             return;
         }
         selectedTeam.push(id);
@@ -149,7 +149,7 @@ function updateUI() {
         if (placeholder) placeholder.style.display = 'none';
 
         // Update Markdown Code
-        const code = `<div align="center">\n  <img src="${apiUrl}" alt="My Pokémon Team" />\n</div>`;
+        const code = `<div align="center">\n  <img src="${apiUrl}" alt="My Pokemon Team" />\n</div>`;
         outputCode.innerText = code;
         copyBtn.disabled = false;
     } else {
@@ -157,7 +157,7 @@ function updateUI() {
         const placeholder = previewWrapper.querySelector('.preview-placeholder');
         if (placeholder) placeholder.style.display = 'block';
         
-        outputCode.innerText = "Select Pokémon in the sidebar...";
+        outputCode.innerText = "Select Pokemon in the sidebar...";
         copyBtn.disabled = true;
     }
 }
