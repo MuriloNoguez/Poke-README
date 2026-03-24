@@ -1,6 +1,8 @@
 const { getUser } = require('../lib/github');
 const { getEvolution, isShiny, getBase64Sprite } = require('../lib/pokemon');
 const { generateSVG } = require('../lib/svgTemplate');
+const fs = require('fs');
+const path = require('path');
 
 module.exports = async (req, res) => {
   try {
@@ -8,6 +10,17 @@ module.exports = async (req, res) => {
 
     if (!user || !pokes) {
       return res.status(400).json({ error: "Missing 'user' or 'pokes' query param. Example: ?user=timao&pokes=1,4,7" });
+    }
+
+    // Load Background
+    let backgroundBase64 = null;
+    try {
+      const bgPath = path.join(__dirname, '..', 'media', 'background.gif');
+      if (fs.existsSync(bgPath)) {
+        backgroundBase64 = `data:image/gif;base64,${fs.readFileSync(bgPath).toString('base64')}`;
+      }
+    } catch (bgErr) {
+      console.error("Error loading background:", bgErr);
     }
 
     const pokeIds = pokes.split(',').slice(0, 6); // Up to 6 base IDs for a team
@@ -63,7 +76,7 @@ module.exports = async (req, res) => {
     });
 
     // 3. Mount SVG view
-    const svg = generateSVG(team);
+    const svg = generateSVG(team, backgroundBase64);
 
     // 4. Return as browser image + CDN Cache instructions headers
     res.setHeader('Content-Type', 'image/svg+xml');

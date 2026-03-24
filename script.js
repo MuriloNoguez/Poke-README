@@ -1,4 +1,4 @@
-const API_BASE = "https://pokereadme.murilonoguez.com.br/api";
+const API_BASE = window.location.hostname === 'localhost' ? '/api' : "https://pokereadme.murilonoguez.com.br/api";
 const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/MuriloNoguez/Poke-README/main";
 
 let pokedex = {};
