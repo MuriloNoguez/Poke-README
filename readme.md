@@ -1,10 +1,12 @@
 # Poke-README
 
-[**🇧🇷 Português**](#-português) | [**🇺🇸 English**](#-english) | [**🇪🇸 Español**](#-español)
+[**🇧🇷 Português**](#pt) | [**🇺🇸 English**](#en) | [**🇪🇸 Español**](#es)
+
 
 ---
 
 
+<a id="pt"></a>
 ## 🇧🇷 Português
 
 <div align="center">
@@ -16,9 +18,14 @@
     <a href="https://pokereadme.murilonoguez.com.br/"><strong>🚀 Poke-README Builder 🚀</strong></a>
   </p>
 
-
+  <p>
+    <strong>Português</strong> • 
+    <a href="#en">English</a> • 
+    <a href="#es">Español</a>
+  </p>
 
   <p>
+
     <img src="https://img.shields.io/badge/Powered_by-Vercel-black?logo=vercel&logoColor=white" alt="Vercel" />
     <img src="https://img.shields.io/badge/Node.js-18.x-339933?logo=node.js&logoColor=white" alt="Node.js" />
     <img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License" />
@@ -146,6 +153,7 @@ Após o deploy, a Vercel te dará uma URL (ex: `meu-poke-readme.vercel.app`). Us
 
 ---
 
+<a id="en"></a>
 ## 🇺🇸 English
 
 <div align="center">
@@ -157,7 +165,11 @@ Após o deploy, a Vercel te dará uma URL (ex: `meu-poke-readme.vercel.app`). Us
     <a href="https://pokereadme.murilonoguez.com.br/"><strong>🚀 Poke-README Builder 🚀</strong></a>
   </p>
 
-
+  <p>
+    <a href="#pt">Português</a> • 
+    <strong>English</strong> • 
+    <a href="#es">Español</a>
+  </p>
 
   <p>
     <img src="https://img.shields.io/badge/Powered_by-Vercel-black?logo=vercel&logoColor=white" alt="Vercel" />
@@ -287,6 +299,7 @@ Once deployed, Vercel will give you a URL (e.g., `my-poke-readme.vercel.app`). U
 
 ---
 
+<a id="es"></a>
 ## 🇪🇸 Español
 
 <div align="center">
@@ -298,7 +311,11 @@ Once deployed, Vercel will give you a URL (e.g., `my-poke-readme.vercel.app`). U
     <a href="https://pokereadme.murilonoguez.com.br/"><strong>🚀 Poke-README Builder 🚀</strong></a>
   </p>
 
-
+  <p>
+    <a href="#pt">Português</a> • 
+    <a href="#en">English</a> • 
+    <strong>Español</strong>
+  </p>
 
   <p>
     <img src="https://img.shields.io/badge/Powered_by-Vercel-black?logo=vercel&logoColor=white" alt="Vercel" />
