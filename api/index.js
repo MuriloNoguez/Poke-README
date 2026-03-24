@@ -1,19 +1,36 @@
 const { getUser } = require('../lib/github');
 const { getEvolution, isShiny, getBase64Sprite } = require('../lib/pokemon');
 const { generateSVG } = require('../lib/svgTemplate');
+const fs = require('fs');
+const path = require('path');
 
 module.exports = async (req, res) => {
   try {
-    const { user, pokes, item } = req.query;
+    const { user, pokes, item, names } = req.query;
 
     if (!user || !pokes) {
       return res.status(400).json({ error: "Missing 'user' or 'pokes' query param. Example: ?user=timao&pokes=1,4,7" });
+    }
+
+    // 0. Calculations for extra features
+    const nicknameList = (names || "").split(',').map(n => n.trim());
+
+    // Load Background
+    let backgroundBase64 = null;
+    try {
+      const bgPath = path.join(__dirname, '..', 'media', 'background.gif');
+      if (fs.existsSync(bgPath)) {
+        backgroundBase64 = `data:image/gif;base64,${fs.readFileSync(bgPath).toString('base64')}`;
+      }
+    } catch (bgErr) {
+      console.error("Error loading background:", bgErr);
     }
 
     const pokeIds = pokes.split(',').slice(0, 6); // Up to 6 base IDs for a team
     
     // 1. Fetch GitHub User ID and Commits
     const { userId, commits } = await getUser(user);
+    const teamLevel = Math.min(100, Math.max(1, Math.floor(commits / 10)));
 
     // 2. Iterate Pokemon slots
     const team = pokeIds.map((id, index) => {
@@ -58,12 +75,14 @@ module.exports = async (req, res) => {
         ...evolvedPoke,
         isShiny: shinyStatus,
         base64,
-        size
+        size,
+        level: teamLevel,
+        nickname: nicknameList[index] || null
       };
     });
 
     // 3. Mount SVG view
-    const svg = generateSVG(team);
+    const svg = generateSVG(team, backgroundBase64);
 
     // 4. Return as browser image + CDN Cache instructions headers
     res.setHeader('Content-Type', 'image/svg+xml');

@@ -1,8 +1,9 @@
-const API_BASE = "https://pokereadme.murilonoguez.com.br/api";
+const API_BASE = window.location.hostname === 'localhost' ? '/api' : "https://pokereadme.murilonoguez.com.br/api";
 const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/MuriloNoguez/Poke-README/main";
 
 let pokedex = {};
 let selectedTeam = [];
+let teamNicks = ["", "", "", "", "", ""]; // Up to 6 nicknames
 
 // DOM Elements
 const grid = document.getElementById('grid');
@@ -14,6 +15,8 @@ const previewWrapper = document.getElementById('preview-wrapper');
 const outputCode = document.getElementById('output-code');
 const copyBtn = document.getElementById('copy-btn');
 const clearBtn = document.getElementById('clear-btn');
+const nicknamesSection = document.getElementById('nicknames-section');
+const nicknamesContainer = document.getElementById('nicknames-container');
 
 // 1. Initial Load - Try Local first, then Fallback to GitHub
 async function init() {
@@ -69,6 +72,9 @@ function togglePoke(id) {
     const index = selectedTeam.indexOf(id);
     if (index > -1) {
         selectedTeam.splice(index, 1);
+        // Shift nicknames up
+        teamNicks.splice(index, 1);
+        teamNicks.push("");
     } else {
         if (selectedTeam.length >= 6) {
             alert("Limit of 6 Pokémon!");
@@ -76,10 +82,46 @@ function togglePoke(id) {
         }
         selectedTeam.push(id);
     }
+    renderNicknames();
     updateUI();
 }
 
-// 4. Update UI & Live Preview
+// 4. Render Nickname Inputs
+function renderNicknames() {
+    if (selectedTeam.length === 0) {
+        nicknamesSection.style.display = 'none';
+        return;
+    }
+
+    nicknamesSection.style.display = 'block';
+    nicknamesContainer.innerHTML = '';
+
+    selectedTeam.forEach((id, index) => {
+        const data = pokedex[id];
+        const group = document.createElement('div');
+        group.className = 'nick-input-group';
+        
+        const spritePath = `./media/${data.gen}/${data.name}/default_front.gif`;
+        
+        group.innerHTML = `
+            <img src="${spritePath}" alt="${data.name}">
+            <input type="text" placeholder="Nickname for ${data.name}..." 
+                   value="${teamNicks[index]}" 
+                   maxlength="10"
+                   data-index="${index}">
+        `;
+
+        const input = group.querySelector('input');
+        input.oninput = (e) => {
+            teamNicks[index] = e.target.value.trim().substring(0, 10);
+            updateUI();
+        };
+
+        nicknamesContainer.appendChild(group);
+    });
+}
+
+// 5. Update UI & Live Preview
 function updateUI() {
     countDisplay.innerText = selectedTeam.length;
     
@@ -91,9 +133,13 @@ function updateUI() {
 
     const user = usernameInput.value.trim() || "YOUR_USERNAME";
     const pokes = selectedTeam.join(',');
+    const names = teamNicks.slice(0, selectedTeam.length).join(',');
     
     if (selectedTeam.length > 0) {
-        const apiUrl = `${API_BASE}?user=${user}&pokes=${pokes}`;
+        let apiUrl = `${API_BASE}?user=${user}&pokes=${pokes}`;
+        if (names.replace(/,/g, '').length > 0) {
+            apiUrl += `&names=${encodeURIComponent(names)}`;
+        }
         
         // Update Live Preview Image
         previewImg.src = apiUrl;
@@ -138,6 +184,8 @@ copyBtn.onclick = () => {
 
 clearBtn.onclick = () => {
     selectedTeam = [];
+    teamNicks = ["", "", "", "", "", ""];
+    renderNicknames();
     updateUI();
 };
 

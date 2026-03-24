@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "dev": "npx http-server . -p 8080 --nocache",
+    "dev": "node dev-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
