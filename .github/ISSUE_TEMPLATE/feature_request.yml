@@ -1,0 +1,26 @@
+name: "🚀 Sugerir Feature / Feature Request"
+description: "Sugerir uma ideia para este projeto"
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tem uma ideia incrível? Conta pra gente!
+  - type: textarea
+    id: idea
+    attributes:
+      label: "Qual a sua sugestão?"
+      description: "Descreva sua ideia em detalhes."
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: "Por que essa feature é importante?"
+      description: "Explique como isso ajuda os usuários ou o projeto."
+  - type: textarea
+    id: examples
+    attributes:
+      label: "Exemplos"
+      description: "Se tiver referências visuais ou de outros projetos, adicione aqui."
