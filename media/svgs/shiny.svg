@@ -27,17 +27,17 @@
       .name-tag { font-size: 11px; }
       .level-tag { font-size: 9px; fill: #ffffff; } 
       
-      @keyframes roam-0 { 0.00% { transform: translate(40px, 115px); }
-7.26% { transform: translate(40px, 115px); }
-15.76% { transform: translate(10px, 115px); }
-28.63% { transform: translate(10px, 115px); }
-42.61% { transform: translate(129.54732510288068px, 115px); }
-51.72% { transform: translate(129.54732510288068px, 115px); }
-68.37% { transform: translate(115.07330246913583px, 115px); }
-76.91% { transform: translate(115.07330246913583px, 115px); }
-87.00% { transform: translate(284.86496913580254px, 115px); }
-91.42% { transform: translate(284.86496913580254px, 115px); }
-100% { transform: translate(40px, 115px); }
+      @keyframes roam-0 { 0.00% { transform: translate(40px, 125px); }
+7.26% { transform: translate(40px, 125px); }
+15.76% { transform: translate(10px, 125px); }
+28.63% { transform: translate(10px, 125px); }
+42.61% { transform: translate(129.54732510288068px, 125px); }
+51.72% { transform: translate(129.54732510288068px, 125px); }
+68.37% { transform: translate(115.07330246913583px, 125px); }
+76.91% { transform: translate(115.07330246913583px, 125px); }
+87.00% { transform: translate(284.86496913580254px, 125px); }
+91.42% { transform: translate(284.86496913580254px, 125px); }
+100% { transform: translate(40px, 125px); }
  }
       @keyframes flip-run-0 { 0.00% { opacity: 0; transform: scaleX(1); }
 7.26% { opacity: 1; transform: scaleX(-1); }
@@ -62,15 +62,15 @@
 91.42% { opacity: 0; }
  }
     
-      @keyframes roam-1 { 0.00% { transform: translate(160px, 115px); }
-11.10% { transform: translate(160px, 115px); }
-24.80% { transform: translate(178.74356995884773px, 115px); }
-35.62% { transform: translate(178.74356995884773px, 115px); }
-48.52% { transform: translate(402.58616255144034px, 115px); }
-62.43% { transform: translate(402.58616255144034px, 115px); }
-75.78% { transform: translate(608.1481481481482px, 115px); }
-81.93% { transform: translate(608.1481481481482px, 115px); }
-100% { transform: translate(160px, 115px); }
+      @keyframes roam-1 { 0.00% { transform: translate(160px, 125px); }
+11.10% { transform: translate(160px, 125px); }
+24.80% { transform: translate(178.74356995884773px, 125px); }
+35.62% { transform: translate(178.74356995884773px, 125px); }
+48.52% { transform: translate(402.58616255144034px, 125px); }
+62.43% { transform: translate(402.58616255144034px, 125px); }
+75.78% { transform: translate(608.1481481481482px, 125px); }
+81.93% { transform: translate(608.1481481481482px, 125px); }
+100% { transform: translate(160px, 125px); }
  }
       @keyframes flip-run-1 { 0.00% { opacity: 0; transform: scaleX(1); }
 11.10% { opacity: 1; transform: scaleX(1); }
@@ -91,15 +91,15 @@
 81.93% { opacity: 0; }
  }
     
-      @keyframes roam-2 { 0.00% { transform: translate(280px, 105px); }
-9.65% { transform: translate(280px, 105px); }
-22.07% { transform: translate(453.9647633744856px, 105px); }
-34.85% { transform: translate(453.9647633744856px, 105px); }
-52.19% { transform: translate(282.1026234567901px, 105px); }
-64.27% { transform: translate(282.1026234567901px, 105px); }
-79.35% { transform: translate(207.7006172839506px, 105px); }
-84.25% { transform: translate(207.7006172839506px, 105px); }
-100% { transform: translate(280px, 105px); }
+      @keyframes roam-2 { 0.00% { transform: translate(280px, 115px); }
+9.65% { transform: translate(280px, 115px); }
+22.07% { transform: translate(453.9647633744856px, 115px); }
+34.85% { transform: translate(453.9647633744856px, 115px); }
+52.19% { transform: translate(282.1026234567901px, 115px); }
+64.27% { transform: translate(282.1026234567901px, 115px); }
+79.35% { transform: translate(207.7006172839506px, 115px); }
+84.25% { transform: translate(207.7006172839506px, 115px); }
+100% { transform: translate(280px, 115px); }
  }
       @keyframes flip-run-2 { 0.00% { opacity: 0; transform: scaleX(1); }
 9.65% { opacity: 1; transform: scaleX(1); }
@@ -120,19 +120,19 @@
 84.25% { opacity: 0; }
  }
     
-      @keyframes roam-3 { 0.00% { transform: translate(400px, 105px); }
-7.34% { transform: translate(400px, 105px); }
-17.12% { transform: translate(229.18595679012344px, 105px); }
-22.13% { transform: translate(229.18595679012344px, 105px); }
-30.66% { transform: translate(161.61908436213992px, 105px); }
-39.83% { transform: translate(161.61908436213992px, 105px); }
-53.55% { transform: translate(307.2530864197531px, 105px); }
-62.47% { transform: translate(307.2530864197531px, 105px); }
-74.18% { transform: translate(484.37500000000006px, 105px); }
-81.30% { transform: translate(484.37500000000006px, 105px); }
-87.41% { transform: translate(710px, 105px); }
-90.85% { transform: translate(710px, 105px); }
-100% { transform: translate(400px, 105px); }
+      @keyframes roam-3 { 0.00% { transform: translate(400px, 35px); }
+7.34% { transform: translate(400px, 35px); }
+17.12% { transform: translate(229.18595679012344px, 35px); }
+22.13% { transform: translate(229.18595679012344px, 35px); }
+30.66% { transform: translate(161.61908436213992px, 35px); }
+39.83% { transform: translate(161.61908436213992px, 35px); }
+53.55% { transform: translate(307.2530864197531px, 35px); }
+62.47% { transform: translate(307.2530864197531px, 35px); }
+74.18% { transform: translate(484.37500000000006px, 35px); }
+81.30% { transform: translate(484.37500000000006px, 35px); }
+87.41% { transform: translate(640px, 35px); }
+90.85% { transform: translate(640px, 35px); }
+100% { transform: translate(400px, 35px); }
  }
       @keyframes flip-run-3 { 0.00% { opacity: 0; transform: scaleX(1); }
 7.34% { opacity: 1; transform: scaleX(-1); }
@@ -171,50 +171,50 @@
 
     
       <g style="animation: roam-0 45.21s infinite linear;">
-        <title>Pikachu (Pikachu) Lvl. 120</title>
+        <title>Shiny Charmander (Charmander) Lvl. 100</title>
         <g style="animation: bob 1.5s ease-in-out infinite alternate 0s;">
           <!-- Floating Info -->
-          <text x="35" y="-10" class="info-text name-tag">Pikachu</text>
-          <text x="35" y="-25" class="info-text level-tag">LVL 120</text>
+          <text x="30" y="-10" class="info-text name-tag">Shiny Char</text>
+          <text x="30" y="-25" class="info-text level-tag">LVL 100</text>
           
-          <image href="data:image/gif;base64,R0lGODlhIAAgAIMAAAAAAMigQAAAAPjQUDAwMHBQOJhwOMhYOOjo+AAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJHgAAACwAAAAAIAAgAAAIpgABCBxIsKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatzIsSNGASAFcBRAoCTIjSQJGAgg8mJIkAFikrSY0sAAkANyGihQkWROnT8HGOgpIKhRng5TEhBIQIBNowOQNhQQcymBAjGDIsi5NGnMAAQCFMAa4GdRsA+pViX79cCBAWghNgU79msAtyclOg1rt0DeiSBX2g2wk+bOvlKJkhWQ+KLflh4hBgQAIfkECR4AAAAsAAAAACAAIACDAAAAyKBAAAAA+NBQMDAwcFA4mHA4yFg46Oj4AAAAAAAAAAAAAAAAAAAAAAAAAAAACKgAAQgcSLCgwYMIEypcyLChw4cQI0qcSLGixYsYM2rcyLGigI8COAogQPLjxpEEDAQIeRHkxwAwR1pEaWDAxwE4DRTwSABnTp8DDHgUALToTocoCQgkIKBm0QFHGwqAqZRAAZhAEeBUihRmAAIBClwN4JPo14dTqY71euDAgLMQmX4V6zVAW5MSm4KtWwDvxI8q6wbQOdPAXphiMTbtO5alxr6OO0qGGBAAOw==" width="70" height="70" style="image-rendering: pixelated; transform-box: fill-box; transform-origin: center; animation: flip-run-0 45.21s infinite step-end;" />
-          <image href="data:image/gif;base64,R0lGODlhIAAgAIMAAAAAAPjQUAAAAMigQDAwMHBQOJhwOMhYOJA4GOjo+AAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJHgAAACwAAAAAIAAgAAAIuAABCBxIsKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatzIUaKAjwo/CoAogACBkQdLniRpMgBKggICmHzpMGYAlwVyFrDp0uOAmwZ+Bhhg4OYAmg8FCL3J9CZSiASWMh1AoCLPpkyfMpx5M0FTrz0jEjAg4IDLpjEPaF041gACswEMFA1wAMHEtiejDtibl+LYAgMKmDQJOCfFnT8BBx4qoMDho0r3Qg5cUbFkyWtrBh18MnNSzx0XBgQAIfkECR4AAAAsAAAAACAAIACDAAAA+NBQAAAAyKBAMDAwcFA4mHA4yFg4kDgY6Oj4AAAAAAAAAAAAAAAAAAAAAAAACLYAAQgcSLCgwYMIEypcyLChw4cQI0qcSLGixYsYM2rc6FCAR4UeBUAUQICAyIMkTY4sGeAkQQEBSrrsGKCmgAI4C8C0KVHAgJoGfgYYYKDmgJkPfdZcyhQpRAJCmQ4gUHEn06YSZdZMwJRry6wGBBxo2TTAAacMCRgwgGBsgLU1DyCYqNaASagD8t6lqLbAgAIlS/rFSVHnT79/h94sfNRn3sZ/qz6eHNmix8BQw3IE8HGzZ4gBAQA7" width="70" height="70" style="image-rendering: pixelated; transform-box: fill-box; transform-origin: center; animation: flip-front-0 45.21s infinite step-end;" />
+          <image href="data:image/gif;base64,R0lGODlhIAAgAIMAAAAAAPjAOGBAIPiIOAAAAOAoKPDQcChIWNioMOjo+AAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJHgAAACwAAAAAIAAgAAAIogABCBxIsKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatzIsaPHjwMFiBQgsQBCAQFSBiAJsYDJgihVpmTp0MBLgjFlDnjo0iVOmSkHrHRYwIDNnzITCKXJsOhNADlTHlDJVKHPkEADTE1JwCGBATRzglU5oKvXAWBFkg0AlgCBqgy/CiUbE+xEuWjJunVL0S3auWgRwI3oVsBfuxnliuS4F2TDgAAh+QQJHgAAACwAAAAAIAAgAIMAAAD4wDhgQCD4iDgAAADgKCjw0HAoSFjYqDDo6PgAAAAAAAAAAAAAAAAAAAAAAAAIoAABCBxIsKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatzIsaNHgQJCCqBYwKCAACgDjJRYkuDJlChXPizQcuBLmAMi0qx5M+UAlTMLGOAJM0CCnzIZCh1qs+iBlEkVCmAKsmiApygJOCQwQObNrj61bh3QNaTPAF0JEIjKkOtPmC+7TnRLFqZatRTVkq2LFgHbiGpD7pWbUYDbvxbvflzMMCAAOw==" width="60" height="60" style="image-rendering: pixelated; transform-box: fill-box; transform-origin: center; animation: flip-run-0 45.21s infinite step-end;" />
+          <image href="data:image/gif;base64,R0lGODlhIAAgAIMAAAAAAPjAOPiIOGBAIAAAAPDQcNioMChIWOjo+AAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJHgAAACwAAAAAIAAgAAAIjwABCBxIsKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatzIsaNHjgNChtQ4IIBJkwMwDhBw0qSAlBZLtkR5sSRLlwFgUlyJYCaClxVXHph5AChFAgKGtixKwCLSmwEECGga86nUqTqPTiXAFSnVikgHGChgYOXXiWYJFFjL1ShaqWPXGpCaNeJKrCG7XuT6kWJAACH5BAkeAAAALAAAAAAgACAAgwAAAPjAOPiIOGBAIAAAAPDQcNioMChIWOjo+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAiNAAEIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8YBIEF+DECS5ACMAwSUJCngpMUBK0u6rAhTJcsAMyemRBATQUuaAg7EPPCTIoGgQwUQsHjUZgABSi8OaApVac6JRwlo1RqVaUsDBQykXApUa4GzXK9CTCkA7FkDUNVC3BqyqVymZD3qbRgQADs=" width="60" height="60" style="image-rendering: pixelated; transform-box: fill-box; transform-origin: center; animation: flip-front-0 45.21s infinite step-end;" />
         </g>
       </g>
     
       <g style="animation: roam-1 32.52s infinite linear;">
-        <title>Eevee (Eevee) Lvl. 120</title>
+        <title>Shiny Magikarp (Magikarp) Lvl. 100</title>
         <g style="animation: bob 1.5s ease-in-out infinite alternate 0.2s;">
           <!-- Floating Info -->
-          <text x="35" y="-10" class="info-text name-tag">Eevee</text>
-          <text x="35" y="-25" class="info-text level-tag">LVL 120</text>
+          <text x="30" y="-10" class="info-text name-tag">Shiny Magi</text>
+          <text x="30" y="-25" class="info-text level-tag">LVL 100</text>
           
-          <image href="data:image/gif;base64,R0lGODlhIAAgAIMAAAAAAEAwGAAAAMCQUIBgMKiAQLigYODQqGBAOOjo+AAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJHgAAACwAAAAAIAAgAAAIswABCBxIsKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatzIsaPHjAFCdgxAgIBIAQBEWiRZUsCAAC8tCpgpAOaAAgNMVnQ5YEDNnjgLBNgZsqdNozJD2ixAoCfKhwFmDhRAoIDVAAmuOizqNCrVqkIFMB3aMMCBAz19BjDAkgACBASeOhRgwMBNsWu/xpX7kGaAq3VpHiAbkaRVq3QNnB08kaVQpjUVE5ZINaROADUvSpX6MWJAACH5BAkeAAAALAAAAAAgACAAgwAAAEAwGAAAAMCQUIBgMKiAQLigYODQqGBAOOjo+AAAAAAAAAAAAAAAAAAAAAAAAAi0AAEIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mix48UAIDsGIEAgpAAAIS2OJClgQACXFgXIFPByQIEBJSu2HDCAJs+bBQLoBMmzZtGYIGsWIMDz5MMAMgcKIFCgaoAEVh0SbQp1KtWgApYKbRjgwAGePQMYWEkAAQICTh0KMGDAZli1XuHGfTgzgFW6Mw+MjTiyatW5BswKnrgyqF+aiQdHnJpyJFTJEqNK3euxs8OAADs=" width="70" height="70" style="image-rendering: pixelated; transform-box: fill-box; transform-origin: center; animation: flip-run-1 32.52s infinite step-end;" />
-          <image href="data:image/gif;base64,R0lGODlhIAAgAIMAAAAAAAAAAEAwGMCQUKiAQLigYODQqIBgMHhgQGBAOOjo+AAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJHgAAACwAAAAAIAAgAAAIrwABCBxIsKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatzIsaNHjwICWBQQUmBJAQNECgxA8mEAAgNCohQAk4DMAQRUOmQ5ICXMnjl7loTIEmXPo0dJ6nRJEmnSoRIDHPh5lMCBpRFpClBwVIHWii9DEhjLMidFAQUCJKA5VkCCAAUETIRrIIBUAVcDGEg7F4GBvXbpGkCA1WWBAn8THy4MkeRhBIdbXmSZl6VGux8lBgQAIfkECR4AAAAsAAAAACAAIACDAAAAAAAAQDAYwJBQqIBAuKBg4NCogGAweGBAYEA46Oj4AAAAAAAAAAAAAAAAAAAACLAAAQgcSLCgwYMIEypcyLChw4cQI0qcSLGixYsYM2rcyLEjRwEBLAoAKZCkgAEhBQYY+TAAgQEgTwp4SSDmAAIpHa4cgPIlT5w8SUJceZKnUaMjc7YceRSpUIkBDvg0SuCA0ogzBSgwqiBrRZcgCYhdiZOigAIBEswUKyBBgAICJr41ECCqAKsBDKCVi8CA3rpzDSC42rJAAb+IDROGONIwAsMsL4Kse+CpxroeM0cMCAA7" width="70" height="70" style="image-rendering: pixelated; transform-box: fill-box; transform-origin: center; animation: flip-front-1 32.52s infinite step-end;" />
+          <image href="data:image/gif;base64,R0lGODlhIAAgAIMAAAAAAAAAAMBIAPigEEg4CPjAEJCQkMDA0DAwMLiIGHhAANjAUOjo+NCQMOioSAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJHgAAACwAAAAAIAAgAAAI7QABCBxIsKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatz4MEAAAAEIHFSgQGKAAh4LiAQgoKWABQ1KQjxZIAFKAQMGFFC5QMHKmTsD5CxwgIGDAD1/NvQYEqXOAgwCHBjw0mfHnQkEMBXggMFUBAIaNFC6kACBrEJzph1ggEDLjzPfHjAwQKiAtlThPiRAta4BulTx6lVo1iwAvjgRHJiLwIDdwQn5qsVJFYHllo61OjR7AKfbvjnZBtAKmfBiAy5Be2yZoLRCxXMFmKXqUoBNlRAV1xVYOECC3ypdv95N0HfwiQhKnxRe0SPH5xMDAgAh+QQJHgAAACwAAAAAIAAgAIMAAAAAAADASAD4oBBIOAj4wBCQkJAwMDDAwNC4iBh4QADYwFDo6PjQkDDoqEgAAAAI7wABCBxIsKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzalQYIACAAAQOKlAgMUCBjgVCAhDAUsCCBiQhmiyQ4KSAAQMKpFygQKVMnQFwFkDAwEEAnj4bdgR5MmcBBgEQDHDZ8+HMBDedOmAg9YCABg2SLiRAAOvSjjgHGCDA0qNMAUHTBhWwdqrbhwRwRkVgACfdvHfxTh1wwIDhwnMDKyTb8ebNAwgQHCBgIABch3lbsp16oLNayx0xR+bbcvCAxgISKFbY2QBpslNbptYpdmHhvh7JEgiQoHfK1balBub9e2Lh0wRNAn94QHHojdCjXwwIADs=" width="60" height="60" style="image-rendering: pixelated; transform-box: fill-box; transform-origin: center; animation: flip-run-1 32.52s infinite step-end;" />
+          <image href="data:image/gif;base64,R0lGODlhIAAgAIMAAAAAAEg4CAAAAPigEMBIAJCQkPjAEMDA0DAwMHhAANjAULiIGOjo+OioSNCQMAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJHgAAACwAAAAAIAAgAAAI3QABCBxIsKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatwYMUAAjgIDGPio0aNIkxlFGliwYKRAAQIsBoBJoCYBAQZiAoCp86GAAQYM1BwgssDMAQN6NsRpAClSAgMKFPhZ4AACiASaOiVqoKoAAgcKXHWYFWkDBgwIFA0bIKxVhz+RMhDA4ECAAWGNgpU6duHPoWib7jUJNenSBAoUSB2a9OvHmUoVElCQAHGCAk71kowooLJlqZopIpipwEECAR5rLtgM0SgAyB5xslwQWSECvghxwoyIoO/BmyCDQwwIACH5BAkeAAAALAAAAAAgACAAgwAAAEg4CPigEAAAAMBIAJCQkPjAEDAwMMDA0HhAANjAULiIGOjo+OioSNCQMAAAAAjdAAEIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3BgxQACOAgMY+KjRo0iTBj12NGBgwYKRBQMIOCAxwIABBHISAHCTpwAENCEOEMAypwCRA2QWACqUpYCnAgg8LTAUQYECQRsSMAD1qcirOJdaHaCVq4AGDBgQ+ApU59OdDIc+ZTCAAQKlCBCstUm24VCjabkSsFqApNAEChRcNRr1puGHBBQkQJygANTCaycOmEz5KubHEA/YVOAgQdIAOReAdlgYAF+PA1q67NvwwNWsBWP3DI3bIAHaIIM3DAgAOw==" width="60" height="60" style="image-rendering: pixelated; transform-box: fill-box; transform-origin: center; animation: flip-front-1 32.52s infinite step-end;" />
         </g>
       </g>
     
       <g style="animation: roam-2 40.81s infinite linear;">
-        <title>Snorlax (Snorlax) Lvl. 120</title>
+        <title>Shiny Gastly (Gastly) Lvl. 100</title>
         <g style="animation: bob 1.5s ease-in-out infinite alternate 0.4s;">
           <!-- Floating Info -->
-          <text x="40" y="-10" class="info-text name-tag">Snorlax</text>
-          <text x="40" y="-25" class="info-text level-tag">LVL 120</text>
+          <text x="35" y="-10" class="info-text name-tag">Shiny Gast</text>
+          <text x="35" y="-25" class="info-text level-tag">LVL 100</text>
           
-          <image href="data:image/gif;base64,R0lGODlhIAAgAIMAAAAAAEBoePjgqChISFCAkCgwMAAAANjAeEBAQIhoSMDAyOjo+KCguAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJHgAAACwAAAAAIAAgAAAI+wABCBxIsKDBgwgTKlzIsKHDhxANFigQkWGBAAQMVExYwIABAhkpbiTYkUCAjwEmjhR48aNJlwREVryYEiPImzE30ryIU4CAnBFpBhja0+cBjRANDF2KMYDPp0gfKmW6FKqAqA0LDBhAdahPAwcOyMwagGtXAWEXJDiAwKFQs1TDJjDa1mLXu08F1FUodOlNpnl97kXY1ybImnMDDz7YtwDOlIkVL2yMc+KBwGgXS2Sq9OZFzGE1F9RqdoABBQEUKL38NHTWrbA9GtgatrZri7Bzw7YdFuvC2bpz2/bNEHjw2MQbetw6kTQC0Q8LJJiegIGBsStle1zJvWBAACH5BAkeAAAALAAAAAAgACAAgwAAAEBoePjgqChISCgwMFCAkAAAANjAeEBAQIhoSMDAyOjo+KCguAAAAAAAAAAAAAj4AAEIHEiwoMGDCBMqXMiwocOCBAg8dEggQAEDExcSMGCgwEWJGQ1uLBCgY4CIIQlW7EiSZQGQISuetOix5suUMivaFCDgZkaZAYLu5HkA40QDQZNaDMCzqdGHSJUmdSrgaUMCAwZIDcrTwIEDMK8G0LpVwNcFCQ4goJiUrNSvCYiuZQh0q9KmAuYqrEuT5F28eTUqtTkzQFzAehECJUC44mHEgoMyrhlxwAHAZhMfBIqUclbMXzWLzFpSQQAFBrJaxhv6qmqOqVV/nd2arurbsmkXhYobN22rDWP3Vr0xJceIyLNGBB4zYoLnCRgwTwkANkfq2LM3DAgAOw==" width="80" height="80" style="image-rendering: pixelated; transform-box: fill-box; transform-origin: center; animation: flip-run-2 40.81s infinite step-end;" />
-          <image href="data:image/gif;base64,R0lGODlhIAAgAIMAAAAAAPjgqEBoeNjAeFCAkAAAACgwMChISLiQUIhoSEBAQMDAyKCguOjo+AAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJHgAAACwAAAAAIAAgAAAI/wABCBxIsKDBgwgTKlzIsKHDhxAjSjRQ4GABAxIFGiAg4KKBjxQFEMA4kQDHAgJSojRJMqIBkSZjxhTQEuJLmThpTkxJIABOnylrNlwZoGjMokArQkSJ1GjTAB0dgmT69GlHoQY/phRwoMCAAgoSIE2gwGuBAzSxapyZ8gCCAVUDDECAlqdaAwvYpnzbYIDfvgi2whx5EC9HrlsTIFi8OIHgwYQNFrhYV4Dfp35V8iSwQGnBs4LhxpWrEuWCqFkP1B1tletkzwUNqEbLuilX1Wo1zhZdW+7s3LoPXK7tF/dC2cL98m6qfIBxhRTdNp/enO5FhrIVU5+OIMEB4LEnLx/evngy+IJhE7xevz4B2YcFGCBg8J5g2dcR12fczzAgACH5BAkeAAAALAAAAAAgACAAgwAAAPjgqEBoeNjAeFCAkAAAACgwMChISLiQUIhoSEBAQMDAyKCguOjo+AAAAAAAAAj/AAEIHEiwoMGDCBMqXMiwocOHEAcaKHCwgIGIEgkIsGig40QBBC5iNEBAYwEBKE+WFBnRAMiSMGEKYAnRZcybM0eiJBDgZk+UNBuqDEAUJtGfFCGePFqUaYCNNZc6dbrR48KOAg4UGFBAQYKjCRRsLXAA5cygGc0eQDBgaoABCMruXGmQZEmzAtg2GMB3LwK8MBcEtXsXbwIEiBEnULtTsMECCwqfFMDXKV+1E5MWPLlg4+S2bt/i1YqwgGm5oalmPYBW4oHXAlIzXc06oYHXB0DLfou7tevcukPzfe37N9/KU48PIH6VLFvl0I/Htcjw9uHo0BEkqN0wM2LsiE0XHjfoNYHp8+hNJwir9LyCgl4ZIGCgGePj8/bz62cYEAA7" width="80" height="80" style="image-rendering: pixelated; transform-box: fill-box; transform-origin: center; animation: flip-front-2 40.81s infinite step-end;" />
+          <image href="data:image/gif;base64,R0lGODlhIAAgAIMAAAAAAHCw+DhAeFgwWFCA0EAgQAAAADgQOLi4uIiIiJgIQEAQOOjo+AAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJHgAAACwAAAAAIAAgAAAIuwABCBxIsKDBgwgTKlzIsKHDhxAjSpxIsSIAAgQsHsQYIIDGggIwCvgIcmTCjh5JDiQQwCRDlghRCiTg8mXLgihzSgw5MKfPiixzHhgqU2LQjgcKDFha4EDHiByRLp261GlKh1EFKKXKlOfDkCyTcp16ACNEjAQMFNjK1YDZrzTVrl2KYKrbmg0FCJC7tgADAwkKeIWod29fpQgSGNA7sbBcBAoULGDc2LGBy4spVy7MGe9mzSpDix49OiAAIfkECR4AAAAsAAAAACAAIACDAAAAcLD4OEB4WDBYUIDQQCBAAAAAOBA4uLi4iIiImAhAQBA46Oj4AAAAAAAAAAAACLIAAQgcSLCgwYMIEypcyLChw4cQI0qcSLEiAAIELCIUEECjx4YYGRLo6BBjAJIDT6IUIOChyZYpVZ6cyFKgzJsoJY6UeaCnyok7Tx4oMKBogQMzIwY9ULRpUaQ5Rb5k6vQpR4gCMBIYWrUpVIhaDRQg2tVAyIdZBYgdWxRBU7Mw0aodS5eBgQQF0kpkuZYtggRwafIdi0CBggU1BfM1wNgAy7h7H0tOrHHyx8uYM2vejDAgADs=" width="70" height="70" style="image-rendering: pixelated; transform-box: fill-box; transform-origin: center; animation: flip-run-2 40.81s infinite step-end;" />
+          <image href="data:image/gif;base64,R0lGODlhIAAgAIMAAAAAAHCw+FCA0DhAeFgwWDgQOEAgQAAAALi4uIiIiJgIQOjo+AAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJHgAAACwAAAAAIAAgAAAIygABCBxIsKDBgwgTKlzIsKHDhxAjSpxIsaAAARURBghwMaPBARcHePwocqTJgRsDHOQoMWXKggNYQhTgMiVGgQJKatxI8GJNmzcXxrzp82fNoApB4qxZoOnRiDQ5FjBAoKqBAlFlNrxIs0DVr1UL2HzIVQBVsFZpdnTI1Svar1jXNgQpoACCtwQQxEXKEOSBBQUSfE1QAHBIiAMGHMibgKqBBHcPJJaY+ICBy5gNSNaJuDICBaARbObcufKB0aQnJl6d+qTr17BNBgQAIfkECR4AAAAsAAAAACAAIACDAAAAcLD4UIDQWDBYOEB4QCBAAAAAOBA4uLi4iIiImAhA6Oj4AAAAAAAAAAAAAAAACMoAAQgcSLCgwYMIEypcyLChw4cQI0qcSLHiQwECLCIMQECjx4MCAgQwiJFiSJEiB4osGREjypUCCQRg6dDly5UZARDImXDmwJM3X/JcSKCjQKABDii9ObThSQEHCgyYWuDAU4hAD0zdOvUAzIsrpXKlipEmQ5dax261apYoRgMI1A5AwNZow50CDCw4kGBrggMLDAiw63CngQIIEkgtkABBAcGECxM4XKCyZQNFJxadjECBZwSYM2vebKD05sgST4v+yLq169ewDwYEADs=" width="70" height="70" style="image-rendering: pixelated; transform-box: fill-box; transform-origin: center; animation: flip-front-2 40.81s infinite step-end;" />
         </g>
       </g>
     
       <g style="animation: roam-3 58.10s infinite linear;">
-        <title>Lapras (Lapras) Lvl. 120</title>
+        <title>Shiny Rayquaza (Rayquaza) Lvl. 100</title>
         <g style="animation: bob 1.5s ease-in-out infinite alternate 0.6000000000000001s;">
           <!-- Floating Info -->
-          <text x="40" y="-10" class="info-text name-tag">Lapras</text>
-          <text x="40" y="-25" class="info-text level-tag">LVL 120</text>
+          <text x="75" y="-10" class="info-text name-tag">Shiny Rayq</text>
+          <text x="75" y="-25" class="info-text level-tag">LVL 100</text>
           
-          <image href="data:image/gif;base64,R0lGODlhIAAgAIMAAAAAAGCw6FiAsAAAADBIaJCYoDA4OHBwgMiYSPjQaGhQEMDI0Ojo+AAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJHgAAACwAAAAAIAAgAAAI6AABCBxIsKDBgwgTKlzIsKHDhxAjSpxIsaLFhwQIXDRIQIAAAgNCarwoUkCAkx9DUhxgMgCBky5NDqD4MiNMmBlXBhAw4OZOkyMlhmzp0yXNjj49npwpsaPSAAx6tgwK0alHAVEV4HRowAAAAyyvIkDw1CjXAgYOFAhLYOxYkEwbGihwoC5aj2MVqHzY1S7aBWsF5JU4ly7groETJECgAGLaAwYAF6B7gKXiBI350kVsl+XOy5kbgpzs17NL0A6dwq1rwOPL04xTZ+wZoOvH1wEGxK4KcwBInwNCYww5k/bWjQCI+0aOPCAAIfkECR4AAAAsAAAAACAAIACDAAAAYLDoMEhoAAAAWICwkJigMDg4cHCAyJhI+NBoaFAQwMjQ6Oj4AAAAAAAAAAAACOgAAQgcSLCgwYMIEypcyLChw4cQI0qcSLGiRYcCBFw0KIAAAQEDQmq8KJJAgJMfQ1IcYDKAgJMuTQ6g+DIjTJgZVwYgMODmTpMjJYZs6dMlzY4+PZ6cKbGj0gAMerYMCtGpRwJRFeB8aMAAAAMsPSJA8NQo1wIGDhRgKWDsWJBMHRoocKAuWrEKVELsahftgrUExiqQOJfu366AEyRAMJhrXQN/C9A9wFJxgsZy6SK223OnZcwMQUruyxKnYtAKO8Kte8CAx5cn26JOmLFzV6ewl85ODXNAxto342IMKbzzTqoWifveyDwgADs=" width="80" height="80" style="image-rendering: pixelated; transform-box: fill-box; transform-origin: center; animation: flip-run-3 58.10s infinite step-end;" />
-          <image href="data:image/gif;base64,R0lGODlhIAAgAIMAAAAAAGCw6FiAsAAAADBIaPjQaMiYSHBwgMDI0Ojo+JCYoDA4OGhQEAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJHgAAACwAAAAAIAAgAAAI6AABCBxIsKDBgwgTKlzIsKHDhxAjSpxIsaLFhgMGJMwocUCAABoJiBQJwCPIiAMIBBBAQMDHlS0DENAIMaUAlx9NrmRJs6bKlR4H4JxJ8SdLmUMp6tyJM+dEoQleSk0goGdNAQkYNBXAgKrVmghSvpwZtqLQph9vfoV44OxLtQcoLkAw82zVlAgWSFxwQEHLu2cJKDig16HIAX5dCjDAWLHglAQathzQ9qOBApgN5GzL0vBMxZhDK4bMcKTim6FT33RMEqHbjy1Ti/65cy1Bm2oZy2Zsl2jpjDMZC+ddN/LTjMhtX1xuMSAAIfkECR4AAAAsAAAAACAAIACDAAAAYLDoAAAAWICwMEho+NBoyJhIcHCAwMjQ6Oj4kJigMDg4aFAQAAAAAAAAAAAACOgAAQgcSLCgwYMIEypcyLChw4cQI0qcSLGixYsWBQhIqFGigAABNhIYORLAx5ARBRAIMIDAAJAsXQYgsBGiygEvQZ5k2bKmzZUsPwrISZMi0JYziVLcyTOnzolDE8CcmmCAT5sDEjBwOoBB1as2EaiESVNsxaFOQeIE+3CBWJww1yJYAHHkggMKaKK1qlLBgQUlGboUkNclX7QjFQwl4JDmgZMGCkg2oPMx48Y0Xw6QzFmzysuCV+LczLkz3MAJRzp1Wboz0JigDaJVK8BA5NK2h6q1qvCzRpq2g+fWq5ItQ43IO2JczjwgADs=" width="80" height="80" style="image-rendering: pixelated; transform-box: fill-box; transform-origin: center; animation: flip-front-3 58.10s infinite step-end;" />
+          <image href="data:image/gif;base64,R0lGODlhQABAAIMAAAAAABAQEEhISCgoKHBwcJgYGDAwMJCQkFgQCPDIMMCgKJB4GJiosMjY8AAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJHgAAACwAAAAAQABAAAAI/wABCBxIsKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatzIsaPHjyBDihxJsqTJkyhTqlzJsqXLlzBjypxJs6bNmzhtBghQcydPggEE/JwZgMBQAEGF9iRgdGDSozGDNkUqoCpUmFKbJlVKM+nUp129arWq0udQn1Z3fuVqcmeBtzwHFGWqIEECo2mDXg0Z4G3VAmoJ2L3LlKleoUL3euxb1YDjoAoUVJ0swLBQyQEGyCXJ2LHVBZRDCxhgtW5mxRARIFDY1wDlAK6rap4tWzbhnRN9AkBQYHXCna+Bzx5OuioBzZXZQpSK3DfCp2aFajaL3DiBAwMED6CYdXPBAKqpBv89gDftwOrWsSfAnLtA5ePf3wLWe/3A1qNbjRu4nl25Q8bWaSZQX9PJJVdyYDlF2QAFEOAYdgT411BfbyGQmWaOGVBAgXJdmKBqc40W1FsGLMCfAPZFZBYCyClgQHHSDbBAUAea1VcAB+TYoQAkzkhejqgx5NMCA8RmlYw1BtaAXjjax1NmvRVgQALvpWiRTy8eiWRgERZZVGJ9rRamWwMgYBhHFF6owABr+rQkA9nl+JeYvT0J2Jlo7lTcmtMhJVx9PIJY54B3BllRZgJIxh5Sfo2Wo1HggQeYUwwYeihpVFJ5lnxSegaen/iJFFSmiTm10345OsZSUlRqOJ+CgFpOGlJsGv7lXoZMkSfhSbAZgOhkt74X4a68Xlide/kRe5KZow2HbGiyimRml8P5KsAC2EYraoNMNWsgkbhF9Va3p+pGk4UVatuShermdFFAACH5BAkeAAAALAAAAABAAEAAgwAAABAQEEhISCgoKHBwcJgYGDAwMJCQkFgQCPDIMMCgKJB4GJiosMjY8AAAAAAAAAj/AAEIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmypcuXMGPKnEmzps2bLgMEqKlzJ8EAAnzODEBAKACgQXkSKDoQqdGYQJkeFUD1KcyoTJEmpYlUqlOuXbNWVdlTaM+qOr1uNamzgNudA4guVZAgQVG0QK2GDOCWaoG0BOraXbo0b9Cgej3ypWqgMVAFCqhKFlA4aOQAA+JiRIBA4eLGVRdMHi1gQFW6mBMv7AkAQYHOCfkamBxgNtXMuG/fHqxzYtTMAmAj1EmbOO7jpqkSAE5gbUSsmgsG4DwV8VnMcXsCV07gwIDAAygu/14a/qfb14YP3EU7cDt37wkuS1zMPbNAvriJEz1wQKtZrcoZ0N13zjnEl1sIYDdAYwYUkFlqcVF2WFKcESfZAAUQ0Jh3zakWW08IAKeAAclV9SB2TrUFWGlAuWXAAgMK0J9FOi2wIG2ZLQBUhGUhxp93xLmoo3r8eWhgbSViZmNegDVAVFBF7oTZawUYkABl3RkJ0YHYLSlXcwvu19Nr9/2FHwKFdaTdAAqwmV0ATjJQWncHCPBaZ3wlyJdcWvqWXJsPHmXhAPwVNV2Zev4llZqmRSZfmecxGBRs0/11FAN9+inAlVca1ZOA/DX2U29HiQQUp4gZ8BNl/BV4ElJXNlNopqoACNhdhy3Z1qBfBQgAGmFjsVSbAZhN1qttkmW6l4LJ9QqgqymhWdpxzgqwwLXKhoQmmMcR6yVUGS417ZvZknSguDrRalOCCJa7kp44xftSQAA7" width="150" height="150" style="image-rendering: pixelated; transform-box: fill-box; transform-origin: center; animation: flip-run-3 58.10s infinite step-end;" />
+          <image href="data:image/gif;base64,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" width="150" height="150" style="image-rendering: pixelated; transform-box: fill-box; transform-origin: center; animation: flip-front-3 58.10s infinite step-end;" />
         </g>
       </g>
     
