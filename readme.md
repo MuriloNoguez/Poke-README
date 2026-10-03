@@ -173,6 +173,7 @@ Após o deploy, a Vercel te dará uma URL (ex: `meu-poke-readme.vercel.app`). Us
   <p>Para os saudosistas da era clássica do Game Boy!</p>
   <br/>
   <p><i><b>Aviso Legal:</b> Pokemon e todos os nomes e sprites associados são marcas registradas e pertencem à Nintendo, Creatures Inc. e GAME FREAK inc. Este é um projeto não-oficial feito de fã para fãs, sem fins lucrativos. A licença de código aberto se aplica apenas à base de código (programação), e não aos ativos da marca.</i></p>
+  <p><i><b>Créditos:</b> sprites animados do <a href="https://github.com/PMDCollab/SpriteCollab">PMD SpriteCollab</a> (CC BY-NC 4.0, uso não comercial) e dados da <a href="https://pokeapi.co/">PokéAPI</a>. Lista completa de artistas por Pokémon em <a href="CREDITS.md">CREDITS.md</a>.</i></p>
 </div>
 
 ---
@@ -346,6 +347,7 @@ Once deployed, Vercel will give you a URL (e.g., `my-poke-readme.vercel.app`). U
   <p>For those who miss the classic Game Boy era!</p>
   <br/>
   <p><i><b>Legal Notice:</b> Pokemon and all associated names and sprites are trademarks of Nintendo, Creatures Inc. and GAME FREAK inc. This is a non-profit fan project. The open-source license applies only to the codebase, not the brand assets.</i></p>
+  <p><i><b>Credits:</b> animated sprites from <a href="https://github.com/PMDCollab/SpriteCollab">PMD SpriteCollab</a> (CC BY-NC 4.0, non-commercial) and data from <a href="https://pokeapi.co/">PokéAPI</a>. Full per-Pokémon artist list in <a href="CREDITS.md">CREDITS.md</a>.</i></p>
 </div>
 
 ---
@@ -523,4 +525,5 @@ Una vez desplegado, Vercel te dará una URL (por ejemplo: `mi-poke-readme.vercel
   <p>¡Para los que extrañan la era clásica de Game Boy!</p>
   <br/>
   <p><i><b>Aviso Legal:</b> Pokemon y todos los nombres y sprites asociados son marcas registradas y pertenecen a Nintendo, Creatures Inc. y GAME FREAK inc. Este es un proyecto no-oficial hecho de fans para fans, sin fines de lucro. La licencia de código abierto se aplica solo a la base de código (programación) y no a los activos de la marca.</i></p>
+  <p><i><b>Créditos:</b> sprites animados de <a href="https://github.com/PMDCollab/SpriteCollab">PMD SpriteCollab</a> (CC BY-NC 4.0, uso no comercial) y datos de <a href="https://pokeapi.co/">PokéAPI</a>. Lista completa de artistas por Pokémon en <a href="CREDITS.md">CREDITS.md</a>.</i></p>
 </div>
