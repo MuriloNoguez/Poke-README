@@ -4,26 +4,41 @@ const { generateSVG } = require('../lib/svgTemplate');
 const fs = require('fs');
 const path = require('path');
 
+// Themed variants of the classic GIF (same pixel art and clouds, recoloured); overlay darkens behind the labels
+const BACKGROUNDS = {
+  classic: { file: 'background.gif', overlay: 0.8 },
+  none: { file: null, overlay: 0 },
+  ...Object.fromEntries(Object.entries({
+    sunset: 0.4, night: 0.15, snow: 0.45, desert: 0.45, beach: 0.45,
+    autumn: 0.4, sakura: 0.4, rain: 0.3, volcano: 0.2, space: 0.15,
+  }).map(([key, overlay]) => [key, { file: `backgrounds/${key}.gif`, overlay }])),
+};
+
 module.exports = async (req, res) => {
   try {
-    const { user, pokes, item, names } = req.query;
+    const { user, pokes, item, names, stats, bg } = req.query;
 
-    if (!user || !pokes) {
+    if (!user || (!pokes && !stats)) {
       return res.status(400).json({ error: "Missing 'user' or 'pokes' query param. Example: ?user=timao&pokes=1,4,7" });
+    }
+
+    // Builder page reads the live commit count to simulate evolutions client-side
+    if (stats) {
+      const result = await getUser(user);
+      if (result.estimated) return res.status(503).json({ error: 'Could not count contributions right now' });
+      res.setHeader('Cache-Control', 's-maxage=86400, stale-while-revalidate');
+      return res.status(200).json(result);
     }
 
     // 0. Calculations for extra features
     const nicknameList = (names || "").split(',').map(n => n.trim());
 
-    // Load Background
+    // Load Background (unknown keys fall back to the classic GIF)
+    const background = BACKGROUNDS[bg] || BACKGROUNDS.classic;
     let backgroundBase64 = null;
-    try {
-      const bgPath = path.join(__dirname, '..', 'media', 'background.gif');
-      if (fs.existsSync(bgPath)) {
-        backgroundBase64 = `data:image/gif;base64,${fs.readFileSync(bgPath).toString('base64')}`;
-      }
-    } catch (bgErr) {
-      console.error("Error loading background:", bgErr);
+    if (background.file) {
+      const bgPath = path.join(__dirname, '..', 'media', background.file);
+      backgroundBase64 = `data:image/gif;base64,${fs.readFileSync(bgPath).toString('base64')}`;
     }
 
     const pokeIds = pokes.split(',').slice(0, 6); // Up to 6 base IDs for a team
@@ -49,40 +64,18 @@ module.exports = async (req, res) => {
       // 2c. Get Base64 image bytes (from `default_front.gif` or `shiny_front.gif`)
       const base64 = getBase64Sprite(evolvedPoke, shinyStatus);
       
-      // 2d. Tiered Sizing (Tiers: 150, 80, 70, 60)
-      let size = 60; // Initial forms (Bulbasaur, etc)
-
-      // Legendary Category Sub-division
-      const legendsSmall = ["151", "251", "385", "489", "490", "491", "492"]; // Mew, Celebi, Jirachi, Shaymin
-      const legendsMid = ["377", "378", "379", "380", "381", "386", "480", "481", "482"]; // Regi-trio, Lati@s, Deoxys, Pixies
-      const legendsFinal = ["144", "145", "146", "150", "243", "244", "245", "491"]; // Birds, Mewtwo, Beasts, Darkrai
-      const titans = ["249", "250", "382", "383", "384", "483", "484", "486", "487", "494"]; // Lugia, Ho-oh, Groudon, Giratina, Arceus
-
-      if (evolvedPoke.isLegendary) {
-        if (titans.includes(evolvedPoke.id)) size = 150;
-        else if (legendsFinal.includes(evolvedPoke.id)) size = 80;
-        else if (legendsMid.includes(evolvedPoke.id)) size = 70;
-        else if (legendsSmall.includes(evolvedPoke.id)) size = 60;
-        else size = 80; // Default for other legendaries (Final size)
-      } else if (!evolvedPoke.evolution) {
-        size = 80; // Final forms (Charizard, Aggron)
-      } else if (evolvedPoke.commitsRequired > 200) {
-        size = 70; // Middle forms (Charmeleon)
-      }
-    
 
       return {
         ...evolvedPoke,
         isShiny: shinyStatus,
         base64,
-        size,
         level: teamLevel,
         nickname: nicknameList[index] || null
       };
     });
 
     // 3. Mount SVG view
-    const svg = generateSVG(team, backgroundBase64);
+    const svg = generateSVG(team, backgroundBase64, background.overlay);
 
     // 4. Return as browser image + CDN Cache instructions headers
     res.setHeader('Content-Type', 'image/svg+xml');
