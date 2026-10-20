@@ -33,7 +33,7 @@
 ## 🌟 Demonstração ao Vivo
 
 <div align="center">
-  <img src="https://pokereadme.murilonoguez.com.br/api?user=MuriloNoguez&pokes=6,9,160,149,133,150" />
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=MuriloNoguez&pokes=6,9,160,149,133,150" alt="Poke-README demo" />
   <br/>
   <sub><i>O time é calculado a cada atualização: quanto mais você contribui, mais ele evolui.</i></sub>
 </div>
@@ -48,7 +48,7 @@ Se preferir montar na mão, cole isto no README do seu perfil:
 
 ```html
 <div align="center">
-  <img src="https://pokereadme.murilonoguez.com.br/api?user=SeuUsuario&pokes=6,9,3,149,143,26" />
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=SeuUsuario&pokes=6,9,3,149,143,26" alt="Meu time Pokémon" />
 </div>
 ```
 
@@ -61,7 +61,7 @@ Se preferir montar na mão, cole isto no README do seu perfil:
 | `user`    | ✅          | Seu usuário do GitHub.                                                                        | `user=MuriloNoguez`  |
 | `pokes`   | ✅          | Até 6 IDs da Pokédex nacional, separados por vírgula.                                         | `pokes=1,4,7,25`     |
 | `names`   |             | Apelidos na mesma ordem dos Pokémon (máx. 10 caracteres cada).                                | `names=Bulba,,Squirt` |
-| `item`    |             | Pedra de evolução do Eevee: `water`, `thunder`, `fire`, `sun`, `moon`, `leaf`, `ice`.         | `item=fire`          |
+| `item`    |             | Pedra de evolução do Eevee: `water`, `fire`, `sun`, `moon`, `leaf`, `ice`.         | `item=fire`          |
 | `bg`      |             | Fundo do card: `classic` (padrão), `none`, `sunset`, `night`, `snow`, `desert`, `beach`, `autumn`, `sakura`, `rain`, `volcano`, `space`. | `bg=night`           |
 
 Exemplo completo:
@@ -108,59 +108,55 @@ O total é **de todos os anos**, não só do último.
 
 ## 🖼️ Galeria & Exemplos
 
+### 🟢 Time Kanto com Apelidos
+
+Os iniciais originais, Pikachu, Eevee e o misterioso Ditto, cada um com seu apelido via `&names=`. Como são formas base, eles ficam assim para sempre.
+
+```html
+<div align="center">
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=SeuUsuario&pokes=1,4,7,25,133,132&names=Bulba,Char,Squirt,Pika,Vee,Ditto" alt="Meu time Pokémon" />
+</div>
+```
+
+<div align="center"><img src="media/svgs/normal.svg" alt="Time Kanto com apelidos" /></div>
+
 ### 🔱 O Conselho Lendário
 
-Requer **1.000+ contribuições**. Antes disso, todos aparecem como Dittos.
+Mewtwo, Lugia, Ho-Oh, Kyogre, Groudon e Rayquaza no fundo `space`. Requer **1.000+ contribuições**. Antes disso, todos aparecem como Dittos.
 
 ```html
 <div align="center">
-  <img
-    src="https://pokereadme.murilonoguez.com.br/api?user=SeuUsuario&pokes=150,249,384,151,251,493"
-  />
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=SeuUsuario&pokes=150,249,250,382,383,384&bg=space" alt="Meu time Pokémon" />
 </div>
 ```
 
-<div align="center"><img src="media/svgs/legendary.svg" alt="Mockup Lendário" /></div>
+<div align="center"><img src="media/svgs/legendary.svg" alt="Time lendário" /></div>
 
-### 💎 Evoluções do Eevee
+### 💎 Eeveelutions
 
-Escolha a evolução do Eevee com o parâmetro `&item=`.
+Selecione as evoluções direto pelo ID no fundo `sakura`.
 
 ```html
 <div align="center">
-  <img
-    src="https://pokereadme.murilonoguez.com.br/api?user=SeuUsuario&pokes=133,133,133,133,133,133&item=fire"
-  />
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=SeuUsuario&pokes=134,136,196,197,470,700&bg=sakura" alt="Meu time Pokémon" />
 </div>
 ```
 
-<div align="center"><img src="media/svgs/eevee.svg" alt="Mockup Eevee" /></div>
+<div align="center"><img src="media/svgs/eevee.svg" alt="Evoluções do Eevee" /></div>
+
+> 💡 Quer ver o Eevee evoluir junto com você? Use `pokes=133&item=leaf` e ele vira Leafeon quando você atingir o limite.
 
 ### 🌈 Caçadores de Shiny
 
-O flex supremo: chance base de 1/8192, com uma nova tentativa a cada 10 contribuições.
+Um time de peso no fundo `night`. Cada Pokémon tem chance base de 1/8192 de ser shiny, com uma nova tentativa a cada 10 contribuições. A imagem abaixo mostra o time todo shiny, que é o sonho.
 
 ```html
 <div align="center">
-  <img
-    src="https://pokereadme.murilonoguez.com.br/api?user=SeuUsuario&pokes=6,130,376,384,197,132"
-  />
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=SeuUsuario&pokes=6,130,376,384,197,132&bg=night" alt="Meu time Pokémon" />
 </div>
 ```
 
-<div align="center"><img src="media/svgs/shiny.svg" alt="Mockup Shiny" /></div>
-
-### 🟢 Time Kanto Padrão
-
-Os iniciais originais, Pikachu, Eevee e o misterioso Ditto.
-
-```html
-<div align="center">
-  <img src="https://pokereadme.murilonoguez.com.br/api?user=SeuUsuario&pokes=1,4,7,25,133,132" />
-</div>
-```
-
-<div align="center"><img src="media/svgs/normal.svg" alt="Mockup Normal" /></div>
+<div align="center"><img src="media/svgs/shiny.svg" alt="Time shiny" /></div>
 
 ---
 
@@ -240,7 +236,7 @@ Quer contribuir? Veja o [CONTRIBUTING.md](CONTRIBUTING.md).
 ## 🌟 Live Demo
 
 <div align="center">
-  <img src="https://pokereadme.murilonoguez.com.br/api?user=MuriloNoguez&pokes=6,9,160,149,133,150" />
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=MuriloNoguez&pokes=6,9,160,149,133,150" alt="Poke-README demo" />
   <br/>
   <sub><i>The team is recalculated on every refresh: the more you contribute, the more it evolves.</i></sub>
 </div>
@@ -255,7 +251,7 @@ If you prefer to write it by hand, paste this into your profile README:
 
 ```html
 <div align="center">
-  <img src="https://pokereadme.murilonoguez.com.br/api?user=YourUsername&pokes=6,9,3,149,143,26" />
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=YourUsername&pokes=6,9,3,149,143,26" alt="My Pokémon team" />
 </div>
 ```
 
@@ -268,7 +264,7 @@ If you prefer to write it by hand, paste this into your profile README:
 | `user`    | ✅       | Your GitHub username.                                                                         | `user=MuriloNoguez`   |
 | `pokes`   | ✅       | Up to 6 National Pokédex IDs, comma-separated.                                                | `pokes=1,4,7,25`      |
 | `names`   |          | Nicknames in the same order as the Pokémon (max 10 characters each).                          | `names=Bulba,,Squirt` |
-| `item`    |          | Eevee evolution stone: `water`, `thunder`, `fire`, `sun`, `moon`, `leaf`, `ice`.              | `item=fire`           |
+| `item`    |          | Eevee evolution stone: `water`, `fire`, `sun`, `moon`, `leaf`, `ice`.              | `item=fire`           |
 | `bg`      |          | Card background: `classic` (default), `none`, `sunset`, `night`, `snow`, `desert`, `beach`, `autumn`, `sakura`, `rain`, `volcano`, `space`. | `bg=night`            |
 
 Full example:
@@ -315,59 +311,55 @@ The total covers **every year**, not just the last one.
 
 ## 🖼️ Gallery & Examples
 
+### 🟢 Kanto Team with Nicknames
+
+The original starters, Pikachu, Eevee and the mysterious Ditto, each with a nickname via `&names=`. Since they are base forms, they stay that way forever.
+
+```html
+<div align="center">
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=YourUsername&pokes=1,4,7,25,133,132&names=Bulba,Char,Squirt,Pika,Vee,Ditto" alt="My Pokémon team" />
+</div>
+```
+
+<div align="center"><img src="media/svgs/normal.svg" alt="Kanto team with nicknames" /></div>
+
 ### 🔱 The Legendary Council
 
-Requires **1,000+ contributions**. Until then, they all show up as Dittos.
+Mewtwo, Lugia, Ho-Oh, Kyogre, Groudon and Rayquaza on the `space` background. Requires **1,000+ contributions**. Until then, they all show up as Dittos.
 
 ```html
 <div align="center">
-  <img
-    src="https://pokereadme.murilonoguez.com.br/api?user=YourUsername&pokes=150,249,384,151,251,493"
-  />
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=YourUsername&pokes=150,249,250,382,383,384&bg=space" alt="My Pokémon team" />
 </div>
 ```
 
-<div align="center"><img src="media/svgs/legendary.svg" alt="Legendary Mockup" /></div>
+<div align="center"><img src="media/svgs/legendary.svg" alt="Legendary team" /></div>
 
-### 💎 Eevee Branching Evolutions
+### 💎 Eeveelutions
 
-Pick Eevee's evolution with the `&item=` parameter.
+Pick the evolutions directly by ID on the `sakura` background.
 
 ```html
 <div align="center">
-  <img
-    src="https://pokereadme.murilonoguez.com.br/api?user=YourUsername&pokes=133,133,133,133,133,133&item=fire"
-  />
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=YourUsername&pokes=134,136,196,197,470,700&bg=sakura" alt="My Pokémon team" />
 </div>
 ```
 
-<div align="center"><img src="media/svgs/eevee.svg" alt="Eevee Mockup" /></div>
+<div align="center"><img src="media/svgs/eevee.svg" alt="Eevee evolutions" /></div>
+
+> 💡 Want Eevee to evolve along with you? Use `pokes=133&item=leaf` and it turns into Leafeon once you reach the threshold.
 
 ### 🌈 Shiny Hunters
 
-The ultimate flex: a 1/8192 base chance, with a new roll every 10 contributions.
+A heavy-hitting team on the `night` background. Each Pokémon has a 1/8192 base shiny chance, with a new roll every 10 contributions. The image below shows the dream: the whole team shiny.
 
 ```html
 <div align="center">
-  <img
-    src="https://pokereadme.murilonoguez.com.br/api?user=YourUsername&pokes=6,130,376,384,197,132"
-  />
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=YourUsername&pokes=6,130,376,384,197,132&bg=night" alt="My Pokémon team" />
 </div>
 ```
 
-<div align="center"><img src="media/svgs/shiny.svg" alt="Shiny Mockup" /></div>
-
-### 🟢 Standard Kanto Team
-
-The original starters, Pikachu, Eevee and the mysterious Ditto.
-
-```html
-<div align="center">
-  <img src="https://pokereadme.murilonoguez.com.br/api?user=YourUsername&pokes=1,4,7,25,133,132" />
-</div>
-```
-
-<div align="center"><img src="media/svgs/normal.svg" alt="Normal Mockup" /></div>
+<div align="center"><img src="media/svgs/shiny.svg" alt="Shiny team" /></div>
 
 ---
 
@@ -447,7 +439,7 @@ Want to contribute? See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## 🌟 Demostración en Vivo
 
 <div align="center">
-  <img src="https://pokereadme.murilonoguez.com.br/api?user=MuriloNoguez&pokes=6,9,160,149,133,150" />
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=MuriloNoguez&pokes=6,9,160,149,133,150" alt="Poke-README demo" />
   <br/>
   <sub><i>El equipo se recalcula en cada actualización: cuanto más contribuyes, más evoluciona.</i></sub>
 </div>
@@ -462,7 +454,7 @@ Si prefieres armarlo a mano, pega esto en el README de tu perfil:
 
 ```html
 <div align="center">
-  <img src="https://pokereadme.murilonoguez.com.br/api?user=TuUsuario&pokes=6,9,3,149,143,26" />
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=TuUsuario&pokes=6,9,3,149,143,26" alt="Mi equipo Pokémon" />
 </div>
 ```
 
@@ -475,7 +467,7 @@ Si prefieres armarlo a mano, pega esto en el README de tu perfil:
 | `user`    | ✅          | Tu usuario de GitHub.                                                                         | `user=MuriloNoguez`   |
 | `pokes`   | ✅          | Hasta 6 IDs de la Pokédex nacional, separados por comas.                                      | `pokes=1,4,7,25`      |
 | `names`   |             | Apodos en el mismo orden que los Pokémon (máx. 10 caracteres cada uno).                       | `names=Bulba,,Squirt` |
-| `item`    |             | Piedra evolutiva de Eevee: `water`, `thunder`, `fire`, `sun`, `moon`, `leaf`, `ice`.          | `item=fire`           |
+| `item`    |             | Piedra evolutiva de Eevee: `water`, `fire`, `sun`, `moon`, `leaf`, `ice`.          | `item=fire`           |
 | `bg`      |             | Fondo de la tarjeta: `classic` (por defecto), `none`, `sunset`, `night`, `snow`, `desert`, `beach`, `autumn`, `sakura`, `rain`, `volcano`, `space`. | `bg=night`            |
 
 Ejemplo completo:
@@ -522,59 +514,55 @@ El total abarca **todos los años**, no solo el último.
 
 ## 🖼️ Galería y Ejemplos
 
+### 🟢 Equipo Kanto con Apodos
+
+Los iniciales originales, Pikachu, Eevee y el misterioso Ditto, cada uno con su apodo vía `&names=`. Como son formas base, se quedan así para siempre.
+
+```html
+<div align="center">
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=TuUsuario&pokes=1,4,7,25,133,132&names=Bulba,Char,Squirt,Pika,Vee,Ditto" alt="Mi equipo Pokémon" />
+</div>
+```
+
+<div align="center"><img src="media/svgs/normal.svg" alt="Equipo Kanto con apodos" /></div>
+
 ### 🔱 El Consejo Legendario
 
-Requiere **1.000+ contribuciones**. Antes de eso, todos aparecen como Dittos.
+Mewtwo, Lugia, Ho-Oh, Kyogre, Groudon y Rayquaza en el fondo `space`. Requiere **1.000+ contribuciones**. Antes de eso, todos aparecen como Dittos.
 
 ```html
 <div align="center">
-  <img
-    src="https://pokereadme.murilonoguez.com.br/api?user=TuUsuario&pokes=150,249,384,151,251,493"
-  />
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=TuUsuario&pokes=150,249,250,382,383,384&bg=space" alt="Mi equipo Pokémon" />
 </div>
 ```
 
-<div align="center"><img src="media/svgs/legendary.svg" alt="Mockup Legendario" /></div>
+<div align="center"><img src="media/svgs/legendary.svg" alt="Equipo legendario" /></div>
 
-### 💎 Evoluciones de Eevee
+### 💎 Eeveelutions
 
-Elige la evolución de Eevee con el parámetro `&item=`.
+Elige las evoluciones directamente por ID en el fondo `sakura`.
 
 ```html
 <div align="center">
-  <img
-    src="https://pokereadme.murilonoguez.com.br/api?user=TuUsuario&pokes=133,133,133,133,133,133&item=fire"
-  />
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=TuUsuario&pokes=134,136,196,197,470,700&bg=sakura" alt="Mi equipo Pokémon" />
 </div>
 ```
 
-<div align="center"><img src="media/svgs/eevee.svg" alt="Mockup Eevee" /></div>
+<div align="center"><img src="media/svgs/eevee.svg" alt="Evoluciones de Eevee" /></div>
+
+> 💡 ¿Quieres que Eevee evolucione contigo? Usa `pokes=133&item=leaf` y se convierte en Leafeon cuando alcances el límite.
 
 ### 🌈 Caza Shiny
 
-El flex definitivo: probabilidad base de 1/8192, con un nuevo intento cada 10 contribuciones.
+Un equipo de peso en el fondo `night`. Cada Pokémon tiene una probabilidad base de 1/8192 de ser shiny, con un nuevo intento cada 10 contribuciones. La imagen de abajo muestra el sueño: todo el equipo shiny.
 
 ```html
 <div align="center">
-  <img
-    src="https://pokereadme.murilonoguez.com.br/api?user=TuUsuario&pokes=6,130,376,384,197,132"
-  />
+  <img src="https://pokereadme.murilonoguez.com.br/api?user=TuUsuario&pokes=6,130,376,384,197,132&bg=night" alt="Mi equipo Pokémon" />
 </div>
 ```
 
-<div align="center"><img src="media/svgs/shiny.svg" alt="Mockup Shiny" /></div>
-
-### 🟢 Equipo Kanto Estándar
-
-Los iniciales originales, Pikachu, Eevee y el misterioso Ditto.
-
-```html
-<div align="center">
-  <img src="https://pokereadme.murilonoguez.com.br/api?user=TuUsuario&pokes=1,4,7,25,133,132" />
-</div>
-```
-
-<div align="center"><img src="media/svgs/normal.svg" alt="Mockup Normal" /></div>
+<div align="center"><img src="media/svgs/shiny.svg" alt="Equipo shiny" /></div>
 
 ---
 
